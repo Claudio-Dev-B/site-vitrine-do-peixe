@@ -1,0 +1,351 @@
+/* ================================================================
+   SECTIONS.CSS — Vitrine do Peixe
+   Estilos específicos das seções do one-page
+   Depende de: css/base.css
+   ================================================================ */
+
+
+/* ----------------------------------------------------------------
+   PADRÃO COMPARTILHADO — Section Header
+   Bloco de introdução reutilizado em todas as seções
+   ---------------------------------------------------------------- */
+.section-header {
+  text-align: center;
+  max-width: 700px;
+  margin-inline: auto;
+  margin-bottom: var(--space-12);
+}
+
+.section-header .badge {
+  margin-bottom: var(--space-5);
+}
+
+.section-header h2 {
+  margin-bottom: 0;
+  line-height: var(--lh-heading);
+}
+
+.section-header .divider {
+  margin-top: var(--space-5);
+  margin-bottom: var(--space-6);
+}
+
+.section-header p {
+  font-size: var(--text-md);
+  line-height: var(--lh-body);
+  color: var(--c-secondary);
+  max-width: 620px;
+  margin-inline: auto;
+}
+
+/* Variante para seções escuras */
+.section--dark .section-header h2 { color: var(--c-white); }
+.section--dark .section-header p  { color: var(--c-complement); }
+
+
+/* ----------------------------------------------------------------
+   PADRÃO COMPARTILHADO — Ícone de card
+   ---------------------------------------------------------------- */
+.card-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  border-radius: var(--radius-md);
+  background: rgba(18, 97, 160, 0.10);
+  color: var(--c-secondary);
+  flex-shrink: 0;
+  margin-bottom: var(--space-4);
+}
+
+.card-icon svg {
+  width: 24px;
+  height: 24px;
+}
+
+.section--dark .card-icon {
+  background: rgba(255, 255, 255, 0.10);
+  color: var(--c-complement);
+}
+
+
+/* ----------------------------------------------------------------
+   PADRÃO COMPARTILHADO — CTA de seção
+   ---------------------------------------------------------------- */
+.section-cta {
+  text-align: center;
+  margin-top: var(--space-12);
+}
+
+
+/* ----------------------------------------------------------------
+   PADRÃO COMPARTILHADO — Cards em seção escura
+   ---------------------------------------------------------------- */
+.section--dark .card {
+  background: rgba(255, 255, 255, 0.05);
+  border-color: rgba(255, 255, 255, 0.10);
+}
+
+.section--dark .card h3 { color: var(--c-white); }
+.section--dark .card p  { color: var(--c-complement); }
+
+
+/* ================================================================
+   #SOBRE — A vitrine que o peixe merecia
+   ================================================================ */
+#sobre {
+  background: var(--c-neutral);
+}
+
+/* Grid de 3 pilares */
+.pillar-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-6);
+}
+
+@media (min-width: 640px) {
+  .pillar-grid { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (min-width: 1024px) {
+  .pillar-grid { grid-template-columns: repeat(3, 1fr); }
+}
+
+/* Card de pilar */
+.pillar-card {
+  display: flex;
+  flex-direction: column;
+  border-top: 3px solid var(--c-cta);
+  padding: var(--space-6);
+}
+
+.pillar-card h3 {
+  font-size: var(--text-md);
+  font-weight: var(--fw-semibold);
+  color: var(--c-primary);
+  margin-bottom: var(--space-2);
+}
+
+.pillar-card p {
+  font-size: var(--text-base);
+  color: var(--c-secondary);
+  line-height: var(--lh-body);
+}
+
+
+/* ================================================================
+   #PRODUTOR — Para Produtores
+   ================================================================ */
+#produtor {
+  background: var(--c-primary);
+}
+
+/* Grid de 4 benefícios — reutilizado em #comprador e #industria */
+.benefit-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-5);
+}
+
+@media (min-width: 640px) {
+  .benefit-grid { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (min-width: 1024px) {
+  .benefit-grid { grid-template-columns: repeat(4, 1fr); }
+}
+
+/* Card de benefício */
+.benefit-card {
+  display: flex;
+  flex-direction: column;
+  padding: var(--space-5);
+}
+
+.benefit-card h3 {
+  font-size: var(--text-base);
+  font-weight: var(--fw-semibold);
+  margin-bottom: var(--space-2);
+}
+
+.benefit-card p {
+  font-size: var(--text-sm);
+  line-height: var(--lh-body);
+}
+
+
+/* ================================================================
+   #COMPRADOR — Para Compradores
+   ================================================================ */
+#comprador {
+  background: var(--c-neutral);
+}
+
+
+/* ================================================================
+   #INDUSTRIA — Para a Indústria
+   ================================================================ */
+#industria {
+  background: var(--c-primary);
+}
+
+
+/* ================================================================
+   #COMO-FUNCIONA — Como Funciona
+   ================================================================ */
+#como-funciona {
+  background: var(--c-neutral);
+}
+
+/* Grid das 3 colunas de perfil */
+.how-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-6);
+  margin-bottom: var(--space-12);
+}
+
+@media (min-width: 1024px) {
+  .how-grid { grid-template-columns: repeat(3, 1fr); }
+}
+
+/* Coluna de perfil */
+.how-column {
+  background: var(--c-white);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  border: 1px solid rgba(4, 44, 83, 0.08);
+}
+
+/* Cabeçalho da coluna — identifica o perfil */
+.how-column__header {
+  padding: var(--space-5) var(--space-6);
+  border-bottom: 1px solid rgba(4, 44, 83, 0.08);
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+}
+
+.how-column__profile-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+.how-column--produtor  .how-column__profile-dot { background: var(--c-cta); }
+.how-column--comprador .how-column__profile-dot { background: var(--c-secondary); }
+.how-column--industria .how-column__profile-dot { background: var(--c-support); }
+
+.how-column__profile-name {
+  font-size: var(--text-base);
+  font-weight: var(--fw-semibold);
+  color: var(--c-primary);
+  letter-spacing: var(--ls-wide);
+  text-transform: uppercase;
+}
+
+/* Lista de passos */
+.how-column__steps {
+  padding: var(--space-4) var(--space-6) var(--space-6);
+  display: flex;
+  flex-direction: column;
+}
+
+/* Passo individual */
+.step {
+  display: flex;
+  gap: var(--space-4);
+  padding: var(--space-4) 0;
+  border-bottom: 1px solid rgba(4, 44, 83, 0.06);
+}
+
+.step:last-child {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+/* Número do passo */
+.step__number {
+  font-size: clamp(2rem, 4vw, 2.5rem);
+  font-weight: var(--fw-bold);
+  line-height: 1;
+  color: var(--c-cta);
+  opacity: 0.30;
+  min-width: 36px;
+  flex-shrink: 0;
+  padding-top: 2px;
+}
+
+/* Conteúdo do passo */
+.step__content {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-1);
+}
+
+.step__title {
+  font-size: var(--text-base);
+  font-weight: var(--fw-semibold);
+  color: var(--c-primary);
+  line-height: 1.3;
+}
+
+.step__text {
+  font-size: var(--text-sm);
+  color: var(--c-secondary);
+  line-height: var(--lh-body);
+}
+
+/* Bloco de aviso / disclaimer */
+.disclaimer {
+  border-left: 3px solid var(--c-cta);
+  padding: var(--space-5) var(--space-6);
+  background: rgba(239, 159, 39, 0.06);
+  border-radius: 0 var(--radius-md) var(--radius-md) 0;
+  max-width: 760px;
+  margin-inline: auto;
+  margin-bottom: var(--space-10);
+}
+
+.disclaimer p {
+  font-size: var(--text-base);
+  color: var(--c-primary);
+  line-height: var(--lh-body);
+}
+
+.disclaimer strong {
+  font-weight: var(--fw-semibold);
+  color: var(--c-primary);
+}
+
+
+/* ================================================================
+   NAV — Mobile hamburger (placeholder para implementação futura)
+   ================================================================ */
+
+/* ANIMATION: hamburger menu mobile */
+.nav__toggle {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  padding: 6px;
+  cursor: pointer;
+  background: none;
+  border: none;
+}
+
+.nav__toggle span {
+  display: block;
+  width: 22px;
+  height: 2px;
+  background: var(--c-white);
+  border-radius: 2px;
+  transition: transform var(--t-mid), opacity var(--t-mid);
+}
+
+@media (min-width: 768px) {
+  .nav__toggle { display: none; }
+}
