@@ -1,20 +1,20 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="zh-Hans">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Vitrine do Peixe — Plataforma B2B que conecta a produção ao mercado do pescado amazônico." />
-  <title>Vitrine do Peixe — Conectando a produção ao mercado</title>
+  <meta name="description" content="Vitrine do Peixe — 连接亚马逊渔业生产与市场的B2B平台。" />
+  <title>Vitrine do Peixe — 连接亚马逊渔业生产与市场</title>
 
-  <link rel="canonical" href="https://claudio-dev-b.github.io/site-vitrine-do-peixe/" />
+  <link rel="canonical" href="https://claudio-dev-b.github.io/site-vitrine-do-peixe/zh/" />
   <link rel="alternate" hreflang="pt-BR" href="https://claudio-dev-b.github.io/site-vitrine-do-peixe/" />
   <link rel="alternate" hreflang="en" href="https://claudio-dev-b.github.io/site-vitrine-do-peixe/en/" />
   <link rel="alternate" hreflang="es" href="https://claudio-dev-b.github.io/site-vitrine-do-peixe/es/" />
   <link rel="alternate" hreflang="zh-Hans" href="https://claudio-dev-b.github.io/site-vitrine-do-peixe/zh/" />
   <link rel="alternate" hreflang="x-default" href="https://claudio-dev-b.github.io/site-vitrine-do-peixe/" />
 
-  <link rel="icon" type="image/png" href="assets/favicon-32x32.png" sizes="32x32" />
-  <link rel="apple-touch-icon" href="assets/apple-touch-icon.png" />
+  <link rel="icon" type="image/png" href="../assets/favicon-32x32.png" sizes="32x32" />
+  <link rel="apple-touch-icon" href="../assets/apple-touch-icon.png" />
 
   <!-- DM Sans -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -22,9 +22,9 @@
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600;9..40,700&display=swap" rel="stylesheet" />
 
   <!-- Base da identidade visual -->
-  <link rel="stylesheet" href="css/base.css" />
+  <link rel="stylesheet" href="../css/base.css" />
   <!-- Estilos das seções -->
-  <link rel="stylesheet" href="css/sections.css" />
+  <link rel="stylesheet" href="../css/sections.css" />
 
   <style>
     /* =============================================
@@ -401,15 +401,15 @@
   <div id="liquid-glass" aria-hidden="true"></div>
 
   <!-- Vitória-régia — folhas boiando no rio (parallax) -->
-  <img class="lily lily--1" src="assets/vitoria_regia.png" alt="" aria-hidden="true" />
-  <img class="lily lily--2" src="assets/vitoria_regia.png" alt="" aria-hidden="true" />
-  <img class="lily lily--3" src="assets/vitoria_regia.png" alt="" aria-hidden="true" />
-  <img class="lily lily--4" src="assets/vitoria_regia.png" alt="" aria-hidden="true" data-center />
+  <img class="lily lily--1" src="../assets/vitoria_regia.png" alt="" aria-hidden="true" />
+  <img class="lily lily--2" src="../assets/vitoria_regia.png" alt="" aria-hidden="true" />
+  <img class="lily lily--3" src="../assets/vitoria_regia.png" alt="" aria-hidden="true" />
+  <img class="lily lily--4" src="../assets/vitoria_regia.png" alt="" aria-hidden="true" data-center />
 
   <!-- =============================================
        PRELOADER
   ============================================= -->
-  <div id="preloader" role="status" aria-label="Carregando Vitrine do Peixe">
+  <div id="preloader" role="status" aria-label="正在加载 Vitrine do Peixe">
     <canvas id="preloader-canvas" width="400" height="400" aria-hidden="true"></canvas>
     <div id="preloader-bar-wrap" aria-hidden="true">
       <div id="preloader-bar"></div>
@@ -420,37 +420,37 @@
        HEADER / NAV
   ============================================= -->
   <header>
-    <nav id="nav" class="nav" role="navigation" aria-label="Menu principal">
-      <a href="./" class="nav__logo" aria-label="Vitrine do Peixe — página inicial">
-        <img src="assets/logo.png" alt="Vitrine do Peixe" />
+    <nav id="nav" class="nav" role="navigation" aria-label="主导航菜单">
+      <a href="./" class="nav__logo" aria-label="Vitrine do Peixe — 返回首页">
+        <img src="../assets/logo.png" alt="Vitrine do Peixe" />
       </a>
 
       <!-- Links de navegação — visíveis a partir de 768px -->
       <ul class="nav__links" role="list">
-        <li><a href="#sobre"         class="nav__link">Sobre</a></li>
-        <li><a href="#produtor"      class="nav__link">Produtores</a></li>
-        <li><a href="#comprador"     class="nav__link">Compradores</a></li>
-        <li><a href="#industria"     class="nav__link">Indústria</a></li>
-        <li><a href="#como-funciona" class="nav__link">Como Funciona</a></li>
+        <li><a href="#sobre"         class="nav__link">关于我们</a></li>
+        <li><a href="#produtor"      class="nav__link">生产者</a></li>
+        <li><a href="#comprador"     class="nav__link">采购商</a></li>
+        <li><a href="#industria"     class="nav__link">行业企业</a></li>
+        <li><a href="#como-funciona" class="nav__link">运作方式</a></li>
         <li><div class="lang-switch">
-                  <button type="button" class="lang-switch__btn" aria-haspopup="true" aria-label="Idioma">
-                    <span aria-hidden="true">🌐</span> Português
+                  <button type="button" class="lang-switch__btn" aria-haspopup="true" aria-label="语言">
+                    <span aria-hidden="true">🌐</span> 中文
                   </button>
                   <div class="lang-switch__list" role="menu">
-                    <a href="./" lang="pt-BR" aria-current="true">Português</a>
-            <a href="en/" lang="en">English</a>
-            <a href="es/" lang="es">Español</a>
-            <a href="zh/" lang="zh-Hans">中文</a>
+                    <a href="../" lang="pt-BR">Português</a>
+            <a href="../en/" lang="en">English</a>
+            <a href="../es/" lang="es">Español</a>
+            <a href="./" lang="zh-Hans" aria-current="true">中文</a>
                   </div>
                 </div></li>
         <li>
-          <a href="https://vitrine-do-peixe-piloto.web.app/cadastro.html" class="btn btn--primary btn--sm">Cadastre-se</a>
+          <a href="https://vitrine-do-peixe-piloto.web.app/cadastro.html" class="btn btn--primary btn--sm">立即注册</a>
         </li>
       </ul>
 
       <!-- Botão hambúrguer — mobile only -->
       <!-- ANIMATION: abrir/fechar menu mobile com slide down -->
-      <button class="nav__toggle" aria-label="Abrir menu" aria-expanded="false" aria-controls="nav-mobile">
+      <button class="nav__toggle" aria-label="打开菜单" aria-expanded="false" aria-controls="nav-mobile">
         <span></span>
         <span></span>
         <span></span>
@@ -473,7 +473,7 @@
         preload="auto"
         aria-hidden="true"
       >
-        <source src="assets/video_hero.webm" type="video/webm" />
+        <source src="../assets/video_hero.webm" type="video/webm" />
       </video>
 
       <div class="overlay" aria-hidden="true"></div>
@@ -481,7 +481,7 @@
       <div id="hero-content">
 
         <div class="hero-eyebrow" aria-hidden="true">
-          <p>Plataforma B2B de Pescado Amazônico</p>
+          <p>亚马逊渔业 B2B 平台</p>
         </div>
 
         <div class="hero-title-wrap">
@@ -490,12 +490,12 @@
 
         <div id="hero-divider" aria-hidden="true"></div>
 
-        <p id="hero-subtitle">Conectando a produção ao mercado</p>
+        <p id="hero-subtitle">连接生产与市场</p>
 
       </div>
 
       <div id="hero-scroll" aria-hidden="true">
-        <span>Explore</span>
+        <span>探索更多</span>
         <div class="scroll-chevron"></div>
       </div>
 
@@ -509,13 +509,13 @@
       <div class="container">
 
         <header class="section-header scroll-reveal">
-          <h2 id="sobre-title">A vitrine que o peixe amazônico merecia ter</h2>
+          <h2 id="sobre-title">亚马逊渔业应得的展示平台</h2>
           <div class="divider divider--center"></div>
           <p>
-            A Vitrine é parte do projeto Bússola do Peixe Amazônico, uma startup nascida na Amazônia com uma missão clara: encurtar o caminho entre quem produz e quem compra peixe amazônico de qualidade.
+            Vitrine do Peixe 是 Bússola do Peixe Amazônico 项目的一部分，这是一家诞生于亚马逊地区的初创公司，使命明确：缩短优质亚马逊鱼类生产者与采购商之间的距离。
           </p>
           <p style="margin-top: var(--space-4);">
-            Produtores amazônicos enfrentam dificuldade para chegar até compradores fora da sua região. Compradores não sabem onde encontrar fornecedores confiáveis. A Vitrine existe para resolver esse problema de forma simples: um lugar onde quem produz aparece, e quem compra encontra.
+            亚马逊生产者很难接触到本地区以外的采购商，而采购商也不知道去哪里寻找可靠的供应商。Vitrine 的存在正是为了简单地解决这个问题：让生产者被看见，让采购商找得到。
           </p>
         </header>
 
@@ -523,7 +523,7 @@
         <!-- ANIMATION: cards aparecem em cascata com stagger ao entrar na viewport -->
         <div class="pillar-grid">
 
-          <article class="card pillar-card scroll-reveal" aria-label="Origem garantida">
+          <article class="card pillar-card scroll-reveal" aria-label="来源保证">
             <div class="card-icon">
               <!-- ICON: shield-check — origem e rastreabilidade -->
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
@@ -531,11 +531,11 @@
                 <polyline points="9 12 11 14 15 10"/>
               </svg>
             </div>
-            <h3>Origem garantida</h3>
-            <p>Produtos com rastreabilidade e procedência diretamente da Amazônia.</p>
+            <h3>来源保证</h3>
+            <p>产品可追溯，直接来自亚马逊产地。</p>
           </article>
 
-          <article class="card pillar-card scroll-reveal" aria-label="Conexão direta">
+          <article class="card pillar-card scroll-reveal" aria-label="直接对接">
             <div class="card-icon">
               <!-- ICON: network/link — conexão entre pontas da cadeia -->
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
@@ -546,11 +546,11 @@
                 <line x1="15.41" y1="6.51"  x2="8.59"  y2="10.49"/>
               </svg>
             </div>
-            <h3>Conexão direta</h3>
-            <p>Produtores e compradores se encontram sem intermediários desnecessários.</p>
+            <h3>直接对接</h3>
+            <p>生产者与采购商直接接触，省去不必要的中间环节。</p>
           </article>
 
-          <article class="card pillar-card scroll-reveal" aria-label="Impacto real">
+          <article class="card pillar-card scroll-reveal" aria-label="真实影响">
             <div class="card-icon">
               <!-- ICON: trending-up — crescimento e impacto econômico -->
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
@@ -558,8 +558,8 @@
                 <polyline points="17 6 23 6 23 12"/>
               </svg>
             </div>
-            <h3>Impacto real</h3>
-            <p>Fortalecemos cadeias produtivas locais e a economia amazônica sustentável.</p>
+            <h3>真实影响</h3>
+            <p>我们致力于加强本地生产链和可持续的亚马逊经济。</p>
           </article>
 
         </div><!-- /pillar-grid -->
@@ -575,21 +575,21 @@
       <div class="container">
 
         <header class="section-header scroll-reveal">
-          <span class="badge badge--cta">Cadastro gratuito para produtores</span>
-          <h2 id="produtor-title">Sua produção merece ser vista</h2>
+          <span class="badge badge--cta">生产者免费注册</span>
+          <h2 id="produtor-title">您的产品值得被看见</h2>
           <div class="divider divider--center"></div>
           <p style="color: var(--c-white); text-shadow: 0 2px 12px rgba(2, 18, 38, 0.9), 0 0 4px rgba(2, 18, 38, 0.7);">
-            Muitos produtores amazônicos vendem só para quem já conhecem, não por falta de produto, mas por falta de alcance. Na Vitrine, você tem um perfil público com seus produtos, sua região e seus contatos. Compradores de todo o Brasil podem te encontrar e entrar em contato diretamente.
+            许多亚马逊生产者只能卖给熟人，并非产品不够好，而是缺乏曝光渠道。在 Vitrine 上，您将拥有公开档案，展示产品、所在地区和联系方式。来自巴西各地的采购商都可以直接找到并联系您。
           </p>
           <p style="margin-top: var(--space-4); color: var(--c-white); text-shadow: 0 2px 12px rgba(2, 18, 38, 0.9), 0 0 4px rgba(2, 18, 38, 0.7);">
-            A Bússola não fica no meio da negociação nem cobra comissão sobre nenhuma venda. O acordo é feito entre você e o comprador, do jeito que funciona melhor para os dois.
+            Bússola 不介入交易协商，也不对任何销售收取佣金。交易条件完全由您与采购商双方自行商定。
           </p>
         </header>
 
         <!-- ANIMATION: cards em cascata com stagger -->
         <div class="benefit-grid">
 
-          <article class="card benefit-card scroll-reveal" aria-label="Perfil público">
+          <article class="card benefit-card scroll-reveal" aria-label="公开档案">
             <div class="card-icon">
               <!-- ICON: user — visibilidade pública -->
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
@@ -597,22 +597,22 @@
                 <circle cx="12" cy="7" r="4"/>
               </svg>
             </div>
-            <h3>Perfil público</h3>
-            <p>Seu nome, seus produtos e sua região visíveis para compradores de todo o Brasil.</p>
+            <h3>公开档案</h3>
+            <p>您的名称、产品和地区信息对全巴西的采购商可见。</p>
           </article>
 
-          <article class="card benefit-card scroll-reveal" aria-label="Contato direto">
+          <article class="card benefit-card scroll-reveal" aria-label="直接联系">
             <div class="card-icon">
               <!-- ICON: message-circle — comunicação direta -->
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
                 <path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/>
               </svg>
             </div>
-            <h3>Contato direto</h3>
-            <p>O comprador fala direto com você. Sem formulários longos, sem intermediário.</p>
+            <h3>直接联系</h3>
+            <p>采购商直接与您对话，无需冗长表单，无中间人。</p>
           </article>
 
-          <article class="card benefit-card scroll-reveal" aria-label="Sem comissão">
+          <article class="card benefit-card scroll-reveal" aria-label="零佣金">
             <div class="card-icon">
               <!-- ICON: ban — sem taxa ou comissão -->
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
@@ -620,11 +620,11 @@
                 <line x1="4.93" y1="4.93" x2="19.07" y2="19.07"/>
               </svg>
             </div>
-            <h3>Sem comissão</h3>
-            <p>A Bússola não cobra nada sobre suas vendas. O que você negocia, é seu.</p>
+            <h3>零佣金</h3>
+            <p>Bússola 不对您的销售收取任何费用，谈成的交易完全归您所有。</p>
           </article>
 
-          <article class="card benefit-card scroll-reveal" aria-label="Credibilidade">
+          <article class="card benefit-card scroll-reveal" aria-label="信誉保障">
             <div class="card-icon">
               <!-- ICON: badge-check — verificação e confiança -->
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
@@ -632,14 +632,14 @@
                 <path d="M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z"/>
               </svg>
             </div>
-            <h3>Credibilidade</h3>
-            <p>Um perfil verificado passa mais confiança para quem está comprando pela primeira vez.</p>
+            <h3>信誉保障</h3>
+            <p>经过验证的档案能为首次采购的客户带来更多信任。</p>
           </article>
 
         </div><!-- /benefit-grid -->
 
         <div class="section-cta scroll-reveal">
-          <a href="https://vitrine-do-peixe-piloto.web.app/cadastro.html?perfil=produtor" class="btn btn--primary btn--lg">Cadastre-se como produtor</a>
+          <a href="https://vitrine-do-peixe-piloto.web.app/cadastro.html?perfil=produtor" class="btn btn--primary btn--lg">以生产者身份注册</a>
         </div>
 
       </div>
@@ -653,18 +653,18 @@
       <div class="container">
 
         <header class="section-header scroll-reveal">
-          <span class="badge badge--support">Acesso gratuito para compradores</span>
-          <h2 id="comprador-title">Encontre o peixe certo, na origem certa</h2>
+          <span class="badge badge--support">采购商免费使用</span>
+          <h2 id="comprador-title">找到合适的鱼，来自可靠的产地</h2>
           <div class="divider divider--center"></div>
           <p>
-            Na Vitrine você busca produtores por espécie, região ou volume disponível e entra em contato diretamente com quem produz. Sem taxas, sem intermediação, sem surpresas. A Bússola conecta as duas pontas e deixa a negociação acontecer entre vocês.
+            在 Vitrine 上，您可以按鱼种、地区或可用数量搜索生产者，并直接与生产方联系。无手续费，无中间环节，无意外惊喜。Bússola 负责连接双方，让协商在您和生产者之间自由进行。
           </p>
         </header>
 
         <!-- ANIMATION: cards em cascata com stagger -->
         <div class="benefit-grid">
 
-          <article class="card benefit-card scroll-reveal" aria-label="Busca por espécie e região">
+          <article class="card benefit-card scroll-reveal" aria-label="按鱼种和地区搜索">
             <div class="card-icon">
               <!-- ICON: search — busca e filtro -->
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
@@ -672,11 +672,11 @@
                 <line x1="21" y1="21" x2="16.65" y2="16.65"/>
               </svg>
             </div>
-            <h3>Busca por espécie e região</h3>
-            <p>Filtre por tipo de peixe, localização e disponibilidade para encontrar o que precisa.</p>
+            <h3>按鱼种和地区搜索</h3>
+            <p>按鱼类种类、所在地和可用量筛选，快速找到所需产品。</p>
           </article>
 
-          <article class="card benefit-card scroll-reveal" aria-label="Produtores verificados">
+          <article class="card benefit-card scroll-reveal" aria-label="生产者经过验证">
             <div class="card-icon">
               <!-- ICON: badge-check — verificação -->
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
@@ -684,22 +684,22 @@
                 <path d="M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z"/>
               </svg>
             </div>
-            <h3>Produtores verificados</h3>
-            <p>Todos os perfis passam por verificação antes de aparecer na plataforma.</p>
+            <h3>生产者经过验证</h3>
+            <p>所有档案在上线平台前都经过审核。</p>
           </article>
 
-          <article class="card benefit-card scroll-reveal" aria-label="Negociação direta">
+          <article class="card benefit-card scroll-reveal" aria-label="直接协商">
             <div class="card-icon">
               <!-- ICON: message-circle — negociação direta -->
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
                 <path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/>
               </svg>
             </div>
-            <h3>Negociação direta</h3>
-            <p>Fale com o produtor e acerte os detalhes sem passar por terceiros.</p>
+            <h3>直接协商</h3>
+            <p>与生产者直接沟通，敲定细节，无需通过第三方。</p>
           </article>
 
-          <article class="card benefit-card scroll-reveal" aria-label="Espécies amazônicas">
+          <article class="card benefit-card scroll-reveal" aria-label="亚马逊特色鱼种">
             <div class="card-icon">
               <!-- ICON: map-pin — origem amazônica -->
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
@@ -707,14 +707,14 @@
                 <circle cx="12" cy="10" r="3"/>
               </svg>
             </div>
-            <h3>Espécies amazônicas</h3>
-            <p>Acesse espécies nativas que raramente chegam pelos canais convencionais.</p>
+            <h3>亚马逊特色鱼种</h3>
+            <p>获取常规渠道难以见到的本地原生鱼种。</p>
           </article>
 
         </div><!-- /benefit-grid -->
 
         <div class="section-cta scroll-reveal">
-          <a href="https://vitrine-do-peixe-piloto.web.app/cadastro.html?perfil=comprador" class="btn btn--blue btn--lg">Cadastre-se como comprador</a>
+          <a href="https://vitrine-do-peixe-piloto.web.app/cadastro.html?perfil=comprador" class="btn btn--blue btn--lg">以采购商身份注册</a>
         </div>
 
       </div>
@@ -728,17 +728,17 @@
       <div class="container">
 
         <header class="section-header scroll-reveal">
-          <h2 id="industria-title">Acesso direto à produção amazônica</h2>
+          <h2 id="industria-title">直接对接亚马逊生产端</h2>
           <div class="divider divider--center"></div>
           <p>
-            A Vitrine também é um canal para indústrias que querem se aproximar da produção na Amazônia. Você encontra produtores, negocia volume e ainda pode anunciar seus produtos e lançar promoções dentro da plataforma para um público que já está no setor.
+            Vitrine 也是希望更贴近亚马逊生产端的企业的合作渠道。您可以找到生产者、协商采购量，还能在平台上发布产品广告和促销活动，触达已在该行业内的目标受众。
           </p>
         </header>
 
         <!-- ANIMATION: cards em cascata com stagger -->
         <div class="benefit-grid">
 
-          <article class="card benefit-card scroll-reveal" aria-label="Contato com o produtor">
+          <article class="card benefit-card scroll-reveal" aria-label="直接联系生产者">
             <div class="card-icon">
               <!-- ICON: users — acesso a produtores -->
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
@@ -748,22 +748,22 @@
                 <path d="M16 3.13a4 4 0 010 7.75"/>
               </svg>
             </div>
-            <h3>Contato com o produtor</h3>
-            <p>Negocie diretamente com quem produz, sem passar por atravessadores.</p>
+            <h3>直接联系生产者</h3>
+            <p>与生产者直接协商，无需经过中间商。</p>
           </article>
 
-          <article class="card benefit-card scroll-reveal" aria-label="Anúncios na plataforma">
+          <article class="card benefit-card scroll-reveal" aria-label="平台广告投放">
             <div class="card-icon">
               <!-- ICON: send/megaphone — divulgação e anúncios -->
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
                 <path d="M3 11l19-9-9 19-2-8-8-2z"/>
               </svg>
             </div>
-            <h3>Anúncios na plataforma</h3>
-            <p>Divulgue seus produtos para um público segmentado no setor pesqueiro amazônico.</p>
+            <h3>平台广告投放</h3>
+            <p>向亚马逊渔业领域的精准受众推广您的产品。</p>
           </article>
 
-          <article class="card benefit-card scroll-reveal" aria-label="Promoções e campanhas">
+          <article class="card benefit-card scroll-reveal" aria-label="促销与营销活动">
             <div class="card-icon">
               <!-- ICON: tag — promoções e ofertas -->
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
@@ -771,11 +771,11 @@
                 <line x1="7" y1="7" x2="7.01" y2="7"/>
               </svg>
             </div>
-            <h3>Promoções e campanhas</h3>
-            <p>Lance ofertas e campanhas sazonais diretamente dentro da Vitrine.</p>
+            <h3>促销与营销活动</h3>
+            <p>直接在 Vitrine 平台上发布季节性优惠和营销活动。</p>
           </article>
 
-          <article class="card benefit-card scroll-reveal" aria-label="Panorama de oferta">
+          <article class="card benefit-card scroll-reveal" aria-label="供应总览">
             <div class="card-icon">
               <!-- ICON: bar-chart — panorama da produção disponível -->
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
@@ -785,14 +785,14 @@
                 <line x1="2"  y1="20" x2="22" y2="20"/>
               </svg>
             </div>
-            <h3>Panorama de oferta</h3>
-            <p>Visualize o que está disponível na produção amazônica para planejar sua demanda.</p>
+            <h3>供应总览</h3>
+            <p>查看亚马逊地区现有的生产供应情况，助力您的需求规划。</p>
           </article>
 
         </div><!-- /benefit-grid -->
 
         <div class="section-cta scroll-reveal">
-          <a href="#contato" class="btn btn--outline btn--lg">Fale com nossa equipe</a>
+          <a href="#contato" class="btn btn--outline btn--lg">联系我们的团队</a>
         </div>
 
       </div>
@@ -806,9 +806,9 @@
       <div class="container">
 
         <header class="section-header scroll-reveal">
-          <h2 id="como-funciona-title">Simples para todo mundo</h2>
+          <h2 id="como-funciona-title">人人都能轻松上手</h2>
           <div class="divider divider--center"></div>
-          <p>O cadastro é gratuito e leva poucos minutos. Veja como cada perfil usa a plataforma.</p>
+          <p>注册免费，只需几分钟。了解每种身份如何使用本平台。</p>
         </header>
 
         <!-- 3 colunas de perfil -->
@@ -819,35 +819,35 @@
           <div class="how-column how-column--produtor scroll-reveal">
             <div class="how-column__header">
               <span class="how-column__profile-dot" aria-hidden="true"></span>
-              <span class="how-column__profile-name">Produtor</span>
+              <span class="how-column__profile-name">生产者</span>
             </div>
-            <ol class="how-column__steps" aria-label="Passos para o Produtor">
+            <ol class="how-column__steps" aria-label="生产者操作步骤">
               <li class="step">
                 <span class="step__number" aria-hidden="true">1</span>
                 <div class="step__content">
-                  <strong class="step__title">Crie sua conta</strong>
-                  <p class="step__text">Acesse a plataforma e escolha o perfil de Produtor. O cadastro é gratuito.</p>
+                  <strong class="step__title">创建账户</strong>
+                  <p class="step__text">访问平台并选择“生产者”身份，注册完全免费。</p>
                 </div>
               </li>
               <li class="step">
                 <span class="step__number" aria-hidden="true">2</span>
                 <div class="step__content">
-                  <strong class="step__title">Monte seu perfil</strong>
-                  <p class="step__text">Informe sua localização, as espécies que você produz e os volumes disponíveis.</p>
+                  <strong class="step__title">完善档案</strong>
+                  <p class="step__text">填写您的所在地、生产的鱼种以及可供应的数量。</p>
                 </div>
               </li>
               <li class="step">
                 <span class="step__number" aria-hidden="true">3</span>
                 <div class="step__content">
-                  <strong class="step__title">Aguarde a verificação</strong>
-                  <p class="step__text">Nossa equipe valida seu perfil antes de ele aparecer para os compradores.</p>
+                  <strong class="step__title">等待审核</strong>
+                  <p class="step__text">我们的团队会在您的档案对采购商公开前进行验证。</p>
                 </div>
               </li>
               <li class="step">
                 <span class="step__number" aria-hidden="true">4</span>
                 <div class="step__content">
-                  <strong class="step__title">Receba contatos</strong>
-                  <p class="step__text">Compradores interessados entram em contato diretamente com você para negociar.</p>
+                  <strong class="step__title">接收联系</strong>
+                  <p class="step__text">感兴趣的采购商会直接联系您进行协商。</p>
                 </div>
               </li>
             </ol>
@@ -857,35 +857,35 @@
           <div class="how-column how-column--comprador scroll-reveal">
             <div class="how-column__header">
               <span class="how-column__profile-dot" aria-hidden="true"></span>
-              <span class="how-column__profile-name">Comprador</span>
+              <span class="how-column__profile-name">采购商</span>
             </div>
-            <ol class="how-column__steps" aria-label="Passos para o Comprador">
+            <ol class="how-column__steps" aria-label="采购商操作步骤">
               <li class="step">
                 <span class="step__number" aria-hidden="true">1</span>
                 <div class="step__content">
-                  <strong class="step__title">Crie sua conta</strong>
-                  <p class="step__text">Acesse a plataforma e escolha o perfil de Comprador. O acesso é gratuito.</p>
+                  <strong class="step__title">创建账户</strong>
+                  <p class="step__text">访问平台并选择“采购商”身份，完全免费使用。</p>
                 </div>
               </li>
               <li class="step">
                 <span class="step__number" aria-hidden="true">2</span>
                 <div class="step__content">
-                  <strong class="step__title">Busque produtores</strong>
-                  <p class="step__text">Filtre por espécie, região ou volume disponível até encontrar o que precisa.</p>
+                  <strong class="step__title">搜索生产者</strong>
+                  <p class="step__text">按鱼种、地区或可用数量筛选，直到找到所需产品。</p>
                 </div>
               </li>
               <li class="step">
                 <span class="step__number" aria-hidden="true">3</span>
                 <div class="step__content">
-                  <strong class="step__title">Entre em contato</strong>
-                  <p class="step__text">Clique no perfil do produtor e inicie a conversa diretamente com ele.</p>
+                  <strong class="step__title">发起联系</strong>
+                  <p class="step__text">点击生产者档案，直接与其开始对话。</p>
                 </div>
               </li>
               <li class="step">
                 <span class="step__number" aria-hidden="true">4</span>
                 <div class="step__content">
-                  <strong class="step__title">Negocie e feche</strong>
-                  <p class="step__text">Preço, volume e logística são combinados diretamente entre você e o produtor.</p>
+                  <strong class="step__title">协商并成交</strong>
+                  <p class="step__text">价格、数量和物流由您与生产者直接商定。</p>
                 </div>
               </li>
             </ol>
@@ -895,35 +895,35 @@
           <div class="how-column how-column--industria scroll-reveal">
             <div class="how-column__header">
               <span class="how-column__profile-dot" aria-hidden="true"></span>
-              <span class="how-column__profile-name">Indústria</span>
+              <span class="how-column__profile-name">行业企业</span>
             </div>
-            <ol class="how-column__steps" aria-label="Passos para a Indústria">
+            <ol class="how-column__steps" aria-label="行业企业操作步骤">
               <li class="step">
                 <span class="step__number" aria-hidden="true">1</span>
                 <div class="step__content">
-                  <strong class="step__title">Entre em contato</strong>
-                  <p class="step__text">Fale com nossa equipe para apresentar sua empresa e entender as opções disponíveis.</p>
+                  <strong class="step__title">联系我们</strong>
+                  <p class="step__text">与我们的团队沟通，介绍您的企业并了解可用方案。</p>
                 </div>
               </li>
               <li class="step">
                 <span class="step__number" aria-hidden="true">2</span>
                 <div class="step__content">
-                  <strong class="step__title">Acesse produtores</strong>
-                  <p class="step__text">Busque fornecedores por espécie, região e volume, igual ao perfil de comprador.</p>
+                  <strong class="step__title">对接生产者</strong>
+                  <p class="step__text">按鱼种、地区和数量搜索供应商，方式与采购商身份相同。</p>
                 </div>
               </li>
               <li class="step">
                 <span class="step__number" aria-hidden="true">3</span>
                 <div class="step__content">
-                  <strong class="step__title">Anuncie na plataforma</strong>
-                  <p class="step__text">Configure seus anúncios e promoções para aparecer para quem usa a Vitrine.</p>
+                  <strong class="step__title">平台投放广告</strong>
+                  <p class="step__text">设置广告和促销活动，向 Vitrine 用户展示。</p>
                 </div>
               </li>
               <li class="step">
                 <span class="step__number" aria-hidden="true">4</span>
                 <div class="step__content">
-                  <strong class="step__title">Negocie direto</strong>
-                  <p class="step__text">O contato com produtores é feito diretamente. A Bússola não intermedia nem cobra comissão.</p>
+                  <strong class="step__title">直接协商</strong>
+                  <p class="step__text">与生产者的联系完全直接进行。Bússola 不介入协商，也不收取佣金。</p>
                 </div>
               </li>
             </ol>
@@ -934,13 +934,13 @@
         <!-- Bloco de aviso -->
         <aside class="disclaimer scroll-reveal" role="note">
           <p>
-            <strong>A Bússola não cobra comissão e não intermedia negociações.</strong>
-            O acesso à Vitrine é gratuito para produtores e compradores. Nossa função é conectar as duas pontas. O que acontece depois disso é entre vocês.
+            <strong>Bússola 不收取佣金，也不介入协商过程。</strong>
+            生产者和采购商使用 Vitrine 完全免费。我们的职责是连接双方，之后发生的一切均由双方自行决定。
           </p>
         </aside>
 
         <div class="section-cta scroll-reveal">
-          <a href="https://vitrine-do-peixe-piloto.web.app/cadastro.html" class="btn btn--primary btn--lg">Faça seu cadastro grátis</a>
+          <a href="https://vitrine-do-peixe-piloto.web.app/cadastro.html" class="btn btn--primary btn--lg">免费注册</a>
         </div>
 
       </div>
@@ -962,7 +962,7 @@
       const TOTAL    = 240;
       const FPS      = 48;
       const INTERVAL = 1000 / FPS;
-      const BASE     = 'assets/pirarucu/frames_pirarucu_webp/';
+      const BASE     = '../assets/pirarucu/frames_pirarucu_webp/';
 
       const frames = new Array(TOTAL);
       window._piraFrames = frames; /* expõe para o scroll-sequence */

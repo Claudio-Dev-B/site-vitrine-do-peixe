@@ -1,0 +1,104 @@
+{
+  "htmlLang": "es",
+  "meta": {
+    "title": "Vitrine do Peixe — Conectando la producción con el mercado",
+    "description": "Vitrine do Peixe — Plataforma B2B que conecta la producción con el mercado del pescado amazónico."
+  },
+  "aria": {
+    "loading": "Cargando Vitrine do Peixe",
+    "mainNav": "Menú principal",
+    "logoHome": "Vitrine do Peixe — página de inicio",
+    "openMenu": "Abrir menú"
+  },
+  "nav": {
+    "sobre": "Nosotros",
+    "produtor": "Productores",
+    "comprador": "Compradores",
+    "industria": "Industria",
+    "comoFunciona": "Cómo Funciona",
+    "cadastrar": "Regístrate"
+  },
+  "hero": {
+    "eyebrow": "Plataforma B2B de Pescado Amazónico",
+    "subtitle": "Conectando la producción con el mercado",
+    "scroll": "Explora"
+  },
+  "sobre": {
+    "title": "La vitrina que el pescado amazónico merecía tener",
+    "p1": "Vitrine do Peixe forma parte del proyecto Bússola do Peixe Amazônico, una startup nacida en la Amazonía con una misión clara: acortar el camino entre quien produce y quien compra pescado amazónico de calidad.",
+    "p2": "Los productores amazónicos tienen dificultades para llegar a compradores fuera de su región. Los compradores no saben dónde encontrar proveedores confiables. Vitrine existe para resolver ese problema de forma sencilla: un lugar donde quien produce se muestra, y quien compra encuentra.",
+    "pillar1": { "title": "Origen garantizado", "desc": "Productos con trazabilidad y procedencia directamente de la Amazonía." },
+    "pillar2": { "title": "Conexión directa", "desc": "Productores y compradores se encuentran sin intermediarios innecesarios." },
+    "pillar3": { "title": "Impacto real", "desc": "Fortalecemos las cadenas productivas locales y la economía amazónica sostenible." }
+  },
+  "produtor": {
+    "badge": "Registro gratuito para productores",
+    "title": "Tu producción merece ser vista",
+    "p1": "Muchos productores amazónicos venden solo a quienes ya conocen, no por falta de producto, sino por falta de alcance. En Vitrine tienes un perfil público con tus productos, tu región y tus contactos. Compradores de todo Brasil pueden encontrarte y contactarte directamente.",
+    "p2": "Bússola nunca interviene en la negociación ni cobra comisión sobre ninguna venta. El acuerdo se hace entre tú y el comprador, de la forma que mejor funcione para ambos.",
+    "card1": { "title": "Perfil público", "desc": "Tu nombre, tus productos y tu región visibles para compradores de todo Brasil." },
+    "card2": { "title": "Contacto directo", "desc": "El comprador habla contigo directamente. Sin formularios largos, sin intermediarios." },
+    "card3": { "title": "Sin comisión", "desc": "Bússola no cobra nada sobre tus ventas. Lo que negocies es tuyo." },
+    "card4": { "title": "Credibilidad", "desc": "Un perfil verificado genera más confianza para quien compra por primera vez." },
+    "cta": "Regístrate como productor"
+  },
+  "comprador": {
+    "badge": "Acceso gratuito para compradores",
+    "title": "Encuentra el pescado correcto, en el origen correcto",
+    "p1": "En Vitrine buscas productores por especie, región o volumen disponible y te pones en contacto directo con quien produce. Sin tarifas, sin intermediación, sin sorpresas. Bússola conecta ambas partes y deja que la negociación ocurra entre ustedes.",
+    "card1": { "title": "Búsqueda por especie y región", "desc": "Filtra por tipo de pescado, ubicación y disponibilidad para encontrar lo que necesitas." },
+    "card2": { "title": "Productores verificados", "desc": "Todos los perfiles pasan por verificación antes de aparecer en la plataforma." },
+    "card3": { "title": "Negociación directa", "desc": "Habla con el productor y acuerda los detalles sin pasar por terceros." },
+    "card4": { "title": "Especies amazónicas", "desc": "Accede a especies nativas que rara vez llegan por los canales convencionales." },
+    "cta": "Regístrate como comprador"
+  },
+  "industria": {
+    "title": "Acceso directo a la producción amazónica",
+    "p1": "Vitrine también es un canal para industrias que quieren acercarse a la producción en la Amazonía. Encuentra productores, negocia volumen y anuncia tus productos y promociones dentro de la plataforma para un público que ya está en el sector.",
+    "card1": { "title": "Contacto con el productor", "desc": "Negocia directamente con quien produce, sin intermediarios." },
+    "card2": { "title": "Anuncios en la plataforma", "desc": "Promociona tus productos a un público segmentado del sector pesquero amazónico." },
+    "card3": { "title": "Promociones y campañas", "desc": "Lanza ofertas y campañas de temporada directamente dentro de Vitrine." },
+    "card4": { "title": "Panorama de la oferta", "desc": "Visualiza lo que está disponible en la producción amazónica para planificar tu demanda." },
+    "cta": "Habla con nuestro equipo"
+  },
+  "como": {
+    "title": "Simple para todos",
+    "p1": "El registro es gratuito y toma pocos minutos. Mira cómo cada perfil usa la plataforma.",
+    "produtor": {
+      "label": "Productor",
+      "stepsLabel": "Pasos para el Productor",
+      "step1": { "title": "Crea tu cuenta", "text": "Accede a la plataforma y elige el perfil de Productor. El registro es gratuito." },
+      "step2": { "title": "Completa tu perfil", "text": "Indica tu ubicación, las especies que produces y los volúmenes disponibles." },
+      "step3": { "title": "Espera la verificación", "text": "Nuestro equipo valida tu perfil antes de que aparezca para los compradores." },
+      "step4": { "title": "Recibe contactos", "text": "Compradores interesados se ponen en contacto directo contigo para negociar." }
+    },
+    "comprador": {
+      "label": "Comprador",
+      "stepsLabel": "Pasos para el Comprador",
+      "step1": { "title": "Crea tu cuenta", "text": "Accede a la plataforma y elige el perfil de Comprador. El acceso es gratuito." },
+      "step2": { "title": "Busca productores", "text": "Filtra por especie, región o volumen disponible hasta encontrar lo que necesitas." },
+      "step3": { "title": "Ponte en contacto", "text": "Haz clic en el perfil del productor e inicia la conversación directamente con él." },
+      "step4": { "title": "Negocia y cierra", "text": "El precio, volumen y logística se acuerdan directamente entre tú y el productor." }
+    },
+    "industria": {
+      "label": "Industria",
+      "stepsLabel": "Pasos para la Industria",
+      "step1": { "title": "Ponte en contacto", "text": "Habla con nuestro equipo para presentar tu empresa y conocer las opciones disponibles." },
+      "step2": { "title": "Accede a productores", "text": "Busca proveedores por especie, región y volumen, igual que el perfil de comprador." },
+      "step3": { "title": "Anúnciate en la plataforma", "text": "Configura tus anuncios y promociones para aparecer ante quienes usan Vitrine." },
+      "step4": { "title": "Negocia directamente", "text": "El contacto con productores se hace directamente. Bússola no intermedia ni cobra comisión." }
+    },
+    "disclaimer": {
+      "strong": "Bússola no cobra comisión ni intermedia negociaciones.",
+      "text": "El acceso a Vitrine es gratuito para productores y compradores. Nuestra función es conectar ambas partes. Lo que ocurra después es entre ustedes."
+    },
+    "cta": "Regístrate gratis"
+  },
+  "lang": {
+    "switcherLabel": "Idioma",
+    "pt": "Português",
+    "en": "English",
+    "es": "Español",
+    "zh": "中文"
+  }
+}
