@@ -73,7 +73,7 @@ function buildLangSwitcher(current, dict) {
   const currentLabel = dict[`lang.${current.code}`];
   return [
     '<div class="lang-switch">',
-    `          <button type="button" class="lang-switch__btn" aria-haspopup="true" aria-label="${dict["lang.switcherLabel"]}">`,
+    `          <button type="button" class="lang-switch__btn" aria-haspopup="true" aria-expanded="false" aria-label="${dict["lang.switcherLabel"]}">`,
     `            <span aria-hidden="true">🌐</span> ${currentLabel}`,
     "          </button>",
     '          <div class="lang-switch__list" role="menu">',

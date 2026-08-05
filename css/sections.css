@@ -323,18 +323,23 @@
 
 
 /* ================================================================
-   NAV — Mobile hamburger (placeholder para implementação futura)
+   NAV — Mobile hamburger
    ================================================================ */
 
 /* ANIMATION: hamburger menu mobile */
 .nav__toggle {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
   gap: 5px;
+  width: 44px;
+  height: 44px;
   padding: 6px;
   cursor: pointer;
   background: none;
   border: none;
+  flex-shrink: 0;
 }
 
 .nav__toggle span {
@@ -346,6 +351,78 @@
   transition: transform var(--t-mid), opacity var(--t-mid);
 }
 
+/* Estado aberto — transforma em "X" */
+.nav__toggle.is-open span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
+.nav__toggle.is-open span:nth-child(2) { opacity: 0; }
+.nav__toggle.is-open span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
+
 @media (min-width: 768px) {
   .nav__toggle { display: none; }
+}
+
+/* Painel mobile — abaixo de 768px, .nav__links vira um menu suspenso */
+@media (max-width: 767.98px) {
+  .nav__links {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0;
+    position: fixed;
+    inset-inline: 0;
+    top: var(--nav-mobile-offset, 68px);
+    max-height: calc(100vh - var(--nav-mobile-offset, 68px));
+    overflow-y: auto;
+    background: var(--c-primary-90);
+    backdrop-filter: blur(14px);
+    -webkit-backdrop-filter: blur(14px);
+    padding: var(--space-4) var(--container-pad) var(--space-6);
+    box-shadow: 0 12px 24px rgba(2, 18, 38, 0.35);
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-8px);
+    transition: opacity var(--t-mid), transform var(--t-mid), visibility var(--t-mid);
+  }
+
+  .nav__links.is-open {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+  }
+
+  .nav__links li {
+    width: 100%;
+    border-bottom: 1px solid var(--c-white-08);
+  }
+
+  .nav__links li:last-child { border-bottom: none; }
+
+  .nav__links .nav__link {
+    display: block;
+    padding: var(--space-4) 0;
+  }
+
+  .nav__links .btn { width: 100%; margin-top: var(--space-4); }
+
+  /* Seletor de idioma dentro do menu mobile: sem posicionamento flutuante */
+  .nav__links .lang-switch { padding: var(--space-3) 0; }
+  .nav__links .lang-switch__btn { width: 100%; justify-content: space-between; }
+  .nav__links .lang-switch__list {
+    position: static;
+    box-shadow: none;
+    background: transparent;
+    color: inherit;
+    opacity: 1;
+    visibility: visible;
+    transform: none;
+    display: none;
+    margin-top: var(--space-2);
+    padding: 0;
+  }
+  .nav__links .lang-switch.is-open .lang-switch__list { display: block; }
+  .nav__links .lang-switch__list a { color: var(--c-white-80); }
+  .nav__links .lang-switch__list a:hover,
+  .nav__links .lang-switch__list a[aria-current="true"] {
+    background: var(--c-white-08);
+    color: var(--c-white);
+  }
 }

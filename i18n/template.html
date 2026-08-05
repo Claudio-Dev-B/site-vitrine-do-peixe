@@ -366,7 +366,8 @@
       z-index: 50;
     }
     .lang-switch:hover .lang-switch__list,
-    .lang-switch:focus-within .lang-switch__list {
+    .lang-switch:focus-within .lang-switch__list,
+    .lang-switch.is-open .lang-switch__list {
       opacity: 1;
       visibility: visible;
       transform: translateY(0);
@@ -459,6 +460,7 @@
         aria-hidden="true"
       >
         <source src="{{assetPath}}assets/video_hero.webm" type="video/webm" />
+        <source src="{{assetPath}}assets/video_hero.mp4" type="video/mp4" />
       </video>
 
       <div class="overlay" aria-hidden="true"></div>
@@ -1024,6 +1026,94 @@
       window.addEventListener('scroll', function () {
         nav.classList.toggle('scrolled', window.scrollY > 20);
       }, { passive: true });
+    }());
+
+    /* --------------------------------------------------
+       NAV — menu mobile (hamburger)
+    -------------------------------------------------- */
+    (function () {
+      const nav    = document.getElementById('nav');
+      const toggle = nav.querySelector('.nav__toggle');
+      const links  = nav.querySelector('.nav__links');
+      if (!toggle || !links) return;
+
+      function setOffset() {
+        document.documentElement.style.setProperty('--nav-mobile-offset', nav.offsetHeight + 'px');
+      }
+      setOffset();
+      window.addEventListener('resize', setOffset, { passive: true });
+
+      function closeMenu() {
+        toggle.classList.remove('is-open');
+        links.classList.remove('is-open');
+        toggle.setAttribute('aria-expanded', 'false');
+      }
+
+      function openMenu() {
+        toggle.classList.add('is-open');
+        links.classList.add('is-open');
+        toggle.setAttribute('aria-expanded', 'true');
+      }
+
+      toggle.addEventListener('click', function () {
+        (toggle.classList.contains('is-open') ? closeMenu : openMenu)();
+      });
+
+      // Fecha ao navegar para uma seção/link
+      links.querySelectorAll('a').forEach(function (a) {
+        a.addEventListener('click', closeMenu);
+      });
+
+      // Fecha com Esc
+      document.addEventListener('keydown', function (e) {
+        if (e.key === 'Escape') closeMenu();
+      });
+
+      // Fecha ao clicar fora do menu
+      document.addEventListener('click', function (e) {
+        if (!nav.contains(e.target)) closeMenu();
+      });
+
+      // Volta ao layout desktop automaticamente ao redimensionar
+      window.addEventListener('resize', function () {
+        if (window.innerWidth >= 768) closeMenu();
+      }, { passive: true });
+    }());
+
+    /* --------------------------------------------------
+       LANGUAGE SWITCHER — abre/fecha por clique (funciona em
+       touch, onde não existe :hover) e por teclado.
+    -------------------------------------------------- */
+    (function () {
+      document.querySelectorAll('.lang-switch').forEach(function (widget) {
+        const btn = widget.querySelector('.lang-switch__btn');
+        if (!btn) return;
+
+        function close() {
+          widget.classList.remove('is-open');
+          btn.setAttribute('aria-expanded', 'false');
+        }
+        function open() {
+          document.querySelectorAll('.lang-switch.is-open').forEach(function (w) {
+            if (w !== widget) w.classList.remove('is-open');
+          });
+          widget.classList.add('is-open');
+          btn.setAttribute('aria-expanded', 'true');
+        }
+
+        btn.addEventListener('click', function (e) {
+          e.stopPropagation();
+          (widget.classList.contains('is-open') ? close : open)();
+        });
+
+        document.addEventListener('click', function (e) {
+          if (!widget.contains(e.target)) close();
+        });
+
+        document.addEventListener('keydown', function (e) {
+          if (e.key === 'Escape') close();
+        });
+      });
     }());
 
     /* --------------------------------------------------
