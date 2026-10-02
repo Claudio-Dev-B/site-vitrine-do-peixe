@@ -238,7 +238,7 @@
     }
     .hero-eyebrow::before { content: ''; flex-shrink: 0; width: 32px; height: 1px; margin-top: 0.7em; background: currentColor; }
 
-    .hero-title-wrap { overflow: hidden; padding-bottom: 0.12em; }
+    .hero-title-wrap { overflow: hidden; padding-bottom: 0.25em; margin-bottom: -0.25em; }  /* espaço p/ descendentes (g, p) sem mudar o layout */
 
     #hero-title {
       font-size: clamp(2.2rem, 8vw, 7.4rem);
@@ -314,7 +314,7 @@
     }
     @keyframes heroTitleReveal {
       from { opacity: 0; clip-path: inset(0 0 100% 0); transform: translate3d(0, 24px, 0); }
-      to   { opacity: 1; clip-path: inset(0 0 0 0);    transform: translate3d(0, 0, 0); }
+      to   { opacity: 1; clip-path: inset(-0.1em -0.1em -0.3em -0.1em); transform: translate3d(0, 0, 0); }
     }
 
     #hero-video, #hero-content { will-change: transform; }
@@ -397,13 +397,14 @@
       gap: 6px;
       background: transparent;
       border: 1px solid var(--c-white-20);
-      color: inherit;
+      color: var(--c-white-80);   /* mesmo branco dos links do menu */
       font: inherit;
       font-size: var(--text-sm);
       padding: 6px 12px;
       border-radius: 999px;
       cursor: pointer;
     }
+    .lang-switch__btn:hover { color: var(--c-white); }
     .lang-switch__list {
       margin: 6px 0 0;
       padding: 6px;
