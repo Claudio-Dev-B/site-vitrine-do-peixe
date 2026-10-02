@@ -3,8 +3,27 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Vitrine do Peixe — 连接亚马逊渔业生产与市场的B2B平台。" />
-  <title>Vitrine do Peixe — 连接亚马逊渔业生产与市场</title>
+
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-D315FG7B39"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-D315FG7B39');
+  </script>
+
+  <script>
+    /* marca JS ativo (o CSS só esconde elementos "a revelar" se houver JS)
+       + rede de segurança: nunca deixa o hero invisível se algo falhar */
+    document.documentElement.classList.add('js');
+    setTimeout(function () { document.documentElement.classList.add('hero-ready'); }, 6000);
+  </script>
+
+  <title>Vitrine do Peixe — 亚马逊鱼类，产地直达</title>
+  <meta name="description" content="免费的 B2B 平台，连接亚马逊鱼类（如巨骨舌鱼）的生产者与采购商。资料经过核实，直接联系，零佣金。" />
+  <meta name="theme-color" content="#042C53" />
 
   <link rel="canonical" href="https://claudio-dev-b.github.io/site-vitrine-do-peixe/zh/" />
   <link rel="alternate" hreflang="pt-BR" href="https://claudio-dev-b.github.io/site-vitrine-do-peixe/" />
@@ -13,22 +32,135 @@
   <link rel="alternate" hreflang="zh-Hans" href="https://claudio-dev-b.github.io/site-vitrine-do-peixe/zh/" />
   <link rel="alternate" hreflang="x-default" href="https://claudio-dev-b.github.io/site-vitrine-do-peixe/" />
 
+  <!-- Open Graph / Twitter -->
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Vitrine do Peixe" />
+  <meta property="og:title" content="Vitrine do Peixe — 亚马逊鱼类，产地直达" />
+  <meta property="og:description" content="免费的 B2B 平台，连接亚马逊鱼类（如巨骨舌鱼）的生产者与采购商。资料经过核实，直接联系，零佣金。" />
+  <meta property="og:url" content="https://claudio-dev-b.github.io/site-vitrine-do-peixe/zh/" />
+  <meta property="og:locale" content="zh_CN" />
+  <meta property="og:image" content="https://claudio-dev-b.github.io/site-vitrine-do-peixe/assets/logo.png" />
+  <meta property="og:image:width" content="1721" />
+  <meta property="og:image:height" content="914" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Vitrine do Peixe — 亚马逊鱼类，产地直达" />
+  <meta name="twitter:description" content="免费的 B2B 平台，连接亚马逊鱼类（如巨骨舌鱼）的生产者与采购商。资料经过核实，直接联系，零佣金。" />
+  <meta name="twitter:image" content="https://claudio-dev-b.github.io/site-vitrine-do-peixe/assets/logo.png" />
+
   <link rel="icon" type="image/png" href="../assets/favicon-32x32.png" sizes="32x32" />
   <link rel="apple-touch-icon" href="../assets/apple-touch-icon.png" />
 
-  <!-- DM Sans -->
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://claudio-dev-b.github.io/site-vitrine-do-peixe/#organization",
+      "name": "Vitrine do Peixe",
+      "url": "https://claudio-dev-b.github.io/site-vitrine-do-peixe/",
+      "logo": "https://claudio-dev-b.github.io/site-vitrine-do-peixe/assets/logo.png",
+      "description": "免费的 B2B 平台，连接亚马逊鱼类（如巨骨舌鱼）的生产者与采购商。资料经过核实，直接联系，零佣金。",
+      "parentOrganization": {
+        "@type": "Organization",
+        "name": "Bússola do Peixe Amazônico"
+      },
+      "areaServed": "BR"
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://claudio-dev-b.github.io/site-vitrine-do-peixe/#website",
+      "url": "https://claudio-dev-b.github.io/site-vitrine-do-peixe/",
+      "name": "Vitrine do Peixe",
+      "inLanguage": "zh-Hans",
+      "publisher": {
+        "@id": "https://claudio-dev-b.github.io/site-vitrine-do-peixe/#organization"
+      }
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://claudio-dev-b.github.io/site-vitrine-do-peixe/zh/#webpage",
+      "url": "https://claudio-dev-b.github.io/site-vitrine-do-peixe/zh/",
+      "name": "Vitrine do Peixe — 亚马逊鱼类，产地直达",
+      "description": "免费的 B2B 平台，连接亚马逊鱼类（如巨骨舌鱼）的生产者与采购商。资料经过核实，直接联系，零佣金。",
+      "inLanguage": "zh-Hans",
+      "isPartOf": {
+        "@id": "https://claudio-dev-b.github.io/site-vitrine-do-peixe/#website"
+      },
+      "about": {
+        "@id": "https://claudio-dev-b.github.io/site-vitrine-do-peixe/#organization"
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://claudio-dev-b.github.io/site-vitrine-do-peixe/zh/#faq",
+      "inLanguage": "zh-Hans",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "使用 Vitrine 要花多少钱？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "完全免费。生产者和采购商的注册与使用都不收费。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Vitrine 会从销售中收取佣金吗？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "不会。Bússola 不参与谈判，也不收取佣金。价格、数量和物流由您与对方自行约定。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "如何确定生产者可靠？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "每份资料在上线前都会经过我们团队的核实。首次联系之后，沟通与协议由你们双方自行完成。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "注册之后会发生什么？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "您创建账户并选择身份。每个注册申请都会先经过我们团队审核，通过后才能首次登录平台。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "谁可以参与？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "从事亚马逊鱼类相关业务的生产者、养殖户、采购商和加工企业。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "我必须通过 Vitrine 进行谈判吗？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "不必。Vitrine 连接双方，谈判直接在你们之间进行，用对你们双方最合适的方式。"
+          }
+        }
+      ]
+    }
+  ]
+}
+  </script>
+
+  <!-- DM Sans (display=swap: texto aparece na hora com fonte reserva) -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600;9..40,700&display=swap" rel="stylesheet" />
 
-  <!-- Base da identidade visual -->
   <link rel="stylesheet" href="../css/base.css" />
-  <!-- Estilos das seções -->
   <link rel="stylesheet" href="../css/sections.css" />
 
   <style>
     /* =============================================
-       PRELOADER
+       CSS CRÍTICO — preloader, hero, peixe
     ============================================= */
     #preloader {
       position: fixed;
@@ -40,49 +172,23 @@
       align-items: center;
       justify-content: center;
       gap: 28px;
-      transition: opacity 0.7s ease, visibility 0.7s ease;
+      transition: opacity 0.6s ease, visibility 0.6s ease;
     }
+    .hero-ready #preloader { opacity: 0; visibility: hidden; pointer-events: none; }
 
-    #preloader.fade-out {
-      opacity: 0;
-      visibility: hidden;
-      pointer-events: none;
-    }
+    #preloader-canvas { width: min(260px, 72vw); height: min(260px, 72vw); }
+    #preloader-bar-wrap { width: min(200px, 56vw); height: 2px; background: var(--c-white-08); overflow: hidden; }
+    #preloader-bar { height: 100%; width: 100%; background: var(--c-cta); transform: scaleX(0); transform-origin: left; }
 
-    #preloader-canvas {
-      width:  min(260px, 72vw);
-      height: min(260px, 72vw);
-    }
-
-    #preloader-bar-wrap {
-      width: min(200px, 56vw);
-      height: 2px;
-      background: var(--c-white-08);
-      border-radius: 2px;
-      overflow: hidden;
-    }
-
-    #preloader-bar {
-      height: 100%;
-      width: 0%;
-      background: var(--c-cta);
-      border-radius: 2px;
-      transition: width 80ms linear;
-    }
-
-    /* =============================================
-       HERO
-    ============================================= */
+    /* ---------- HERO ---------- */
     #hero {
       position: relative;
       width: 100%;
       height: 100svh;
-      min-height: 100vh;
+      min-height: 560px;
       display: flex;
-      align-items: center;
-      justify-content: center;
+      align-items: flex-end;
       overflow: hidden;
-      text-align: center;
     }
 
     #hero-video {
@@ -97,88 +203,71 @@
     #hero-content {
       position: relative;
       z-index: 2;
-      padding: 0 var(--container-pad);
-      max-width: 960px;
       width: 100%;
+      max-width: var(--container-xl);
+      margin-inline: auto;
+      padding: 0 var(--container-pad) clamp(88px, 15vh, 160px);
     }
 
-    /* Eyebrow */
     .hero-eyebrow {
-      display: inline-flex;
-      align-items: center;
+      display: flex;
+      align-items: flex-start;
       gap: var(--space-3);
-      margin-bottom: var(--space-5);
-      opacity: 0;
-    }
-
-    .hero-eyebrow::before,
-    .hero-eyebrow::after {
-      content: '';
-      display: block;
-      width: 28px;
-      height: 1px;
-      background: var(--c-cta);
-      flex-shrink: 0;
-    }
-
-    .hero-eyebrow p {
-      font-size: 10px;
+      margin-bottom: var(--space-6);
+      font-size: 11px;
       font-weight: var(--fw-semibold);
       letter-spacing: var(--ls-widest);
       text-transform: uppercase;
       color: var(--c-cta);
     }
+    .hero-eyebrow::before { content: ''; flex-shrink: 0; width: 32px; height: 1px; margin-top: 0.7em; background: currentColor; }
 
-    /* Título — animação reveal com clip-path */
-    .hero-title-wrap {
-      overflow: hidden; /* máscara que esconde o texto antes de revelar */
-      padding-bottom: 0.1em; /* evita corte de descendentes */
-    }
+    .hero-title-wrap { overflow: hidden; padding-bottom: 0.12em; }
 
     #hero-title {
-      font-size: var(--text-hero);
+      font-size: clamp(2.2rem, 8vw, 7.4rem);
       font-weight: var(--fw-bold);
-      line-height: var(--lh-tight);
-      letter-spacing: var(--ls-tight);
-      text-transform: uppercase;
+      line-height: 0.98;
+      letter-spacing: -0.04em;
       color: var(--c-white);
-      opacity: 0;
+      text-wrap: balance;
     }
 
-    /* Divisor */
-    #hero-divider {
-      width: 40px;
-      height: 3px;
-      background: var(--c-cta);
-      border-radius: 2px;
-      margin: var(--space-6) auto;
-      opacity: 0;
-    }
-
-    /* Subtítulo */
     #hero-subtitle {
-      font-size: clamp(0.875rem, 3vw, 1.25rem);
-      font-weight: var(--fw-regular);
-      letter-spacing: var(--ls-wider);
-      text-transform: uppercase;
+      max-width: 34ch;
+      margin-top: var(--space-6);
+      font-size: clamp(1.05rem, 1.7vw, 1.5rem);
+      line-height: 1.45;
       color: var(--c-white-80);
-      opacity: 0;
     }
 
-    /* Scroll indicator */
+    .hero-actions { display: flex; flex-wrap: wrap; gap: var(--space-3); margin-top: var(--space-10); }
+
+    .hero-trust {
+      display: flex;
+      flex-wrap: wrap;
+      gap: var(--space-2) var(--space-6);
+      margin-top: var(--space-8);
+      font-size: 11px;
+      font-weight: var(--fw-medium);
+      letter-spacing: var(--ls-widest);
+      text-transform: uppercase;
+      color: var(--c-white-55);
+    }
+    .hero-trust li { display: inline-flex; align-items: center; gap: 8px; }
+    .hero-trust li::before { content: ''; width: 5px; height: 5px; border-radius: 50%; background: var(--c-cta); }
+
     #hero-scroll {
       position: absolute;
       bottom: 28px;
-      left: 50%;
-      transform: translateX(-50%);
+      right: var(--container-pad);
       z-index: 2;
-      display: flex;
+      display: none;
       flex-direction: column;
       align-items: center;
       gap: 6px;
-      opacity: 0;
     }
-
+    @media (min-width: 900px) { #hero-scroll { display: flex; } }
     #hero-scroll span {
       font-size: 10px;
       font-weight: var(--fw-medium);
@@ -186,80 +275,38 @@
       text-transform: uppercase;
       color: var(--c-white-55);
     }
-
     .scroll-chevron {
-      width: 18px;
-      height: 18px;
+      width: 16px;
+      height: 16px;
       border-right: 1.5px solid var(--c-white-55);
       border-bottom: 1.5px solid var(--c-white-55);
       transform: rotate(45deg);
       animation: chevronBounce 1.8s ease-in-out infinite;
     }
 
-    /* =============================================
-       ANIMAÇÕES DO HERO
-       Clip-path reveal: texto "abre" de baixo para cima,
-       como saindo de trás de uma régua — efeito editorial.
-    ============================================= */
-
-    /* Eyebrow — fade simples */
-    @keyframes heroEyebrow {
-      from { opacity: 0; transform: translateY(-10px); }
-      to   { opacity: 1; transform: translateY(0); }
+    /* Entrada do hero (só com JS; só depois do preloader) */
+    .js .hero-in { opacity: 0; }
+    .hero-ready .hero-in {
+      animation: heroIn 0.9s cubic-bezier(0.22, 1, 0.36, 1) both;
+      animation-delay: calc(0.1s + var(--i, 0) * 0.12s);
     }
+    .hero-ready #hero-title { animation-name: heroTitleReveal; animation-duration: 1.1s; }
 
-    /* Título — clip-path de baixo para cima + leve escala */
+    @keyframes heroIn {
+      from { opacity: 0; transform: translate3d(0, 18px, 0); }
+      to   { opacity: 1; transform: translate3d(0, 0, 0); }
+    }
     @keyframes heroTitleReveal {
-      from {
-        opacity: 0;
-        clip-path: inset(0 0 100% 0);
-        transform: translateY(20px) scaleY(0.96);
-      }
-      to {
-        opacity: 1;
-        clip-path: inset(0 0 0% 0);
-        transform: translateY(0) scaleY(1);
-      }
+      from { opacity: 0; clip-path: inset(0 0 100% 0); transform: translate3d(0, 24px, 0); }
+      to   { opacity: 1; clip-path: inset(0 0 0 0);    transform: translate3d(0, 0, 0); }
     }
 
-    /* Divisor — expande da esquerda */
-    @keyframes heroDivider {
-      from { opacity: 0; transform: scaleX(0); transform-origin: center; }
-      to   { opacity: 1; transform: scaleX(1); transform-origin: center; }
-    }
-
-    /* Subtítulo — fade com tracking */
-    @keyframes heroSubtitle {
-      from { opacity: 0; letter-spacing: 0.20em; filter: blur(4px); }
-      to   { opacity: 1; letter-spacing: var(--ls-wider); filter: blur(0); }
-    }
-
-    /* Scroll indicator — fade */
-    @keyframes heroScroll {
-      from { opacity: 0; transform: translate(-50%, 8px); }
-      to   { opacity: 1; transform: translate(-50%, 0); }
-    }
-
-    /* Classes aplicadas via JS após preloader */
-    .hero-anim-eyebrow  { animation: heroEyebrow     0.7s ease            forwards; animation-delay: 0.10s; }
-    .hero-anim-title    { animation: heroTitleReveal  1.0s cubic-bezier(0.22, 1, 0.36, 1) forwards; animation-delay: 0.35s; }
-    .hero-anim-divider  { animation: heroDivider      0.6s ease            forwards; animation-delay: 0.75s; }
-    .hero-anim-subtitle { animation: heroSubtitle     0.9s ease            forwards; animation-delay: 0.95s; }
-    .hero-anim-scroll   { animation: heroScroll       0.7s ease            forwards; animation-delay: 1.30s; }
-  </style>
-
-  <style>
-    /* =============================================
-       HERO PARALLAX
-    ============================================= */
-    #hero-video,
-    #hero-content { will-change: transform; }
+    #hero-video, #hero-content { will-change: transform; }
 
     /* =============================================
        PIRARUCU — SCROLL-DRIVEN IMAGE SEQUENCE
-       Camada (#fish-layer) controla a POSIÇÃO (segue o
-       scroll na hora). O canvas controla a ROTAÇÃO, com
-       transição → vira de direção suavemente ao subir/descer.
+       Camada = posição (translate3d, na GPU).
+       Canvas = rotação (transição suave ao inverter a direção).
     ============================================= */
     #fish-layer {
       position: fixed;
@@ -270,73 +317,62 @@
       will-change: transform, opacity;
       opacity: 0;
       transition: opacity 0.5s ease;
-      /* sombra direcional (camada não rotaciona → sombra fixa na tela) */
       filter: drop-shadow(6px 12px 18px rgba(2, 18, 38, 0.55));
     }
-
     #fish-canvas {
       display: block;
       transform-origin: center center;
       transition: transform 0.6s cubic-bezier(0.45, 0, 0.2, 1);
     }
 
-    /* =============================================
-       LIQUID GLASS — camada leve entre o peixe e o conteúdo
-    ============================================= */
+    /* Película leve entre o peixe e o conteúdo (sem backdrop-filter: era caro a cada scroll) */
     #liquid-glass {
       position: fixed;
       inset: 0;
-      z-index: 2;                 /* entre o peixe (1) e o conteúdo (3) */
+      z-index: 2;
       pointer-events: none;
       opacity: 0;
       transition: opacity 0.5s ease;
-      backdrop-filter: blur(1px) saturate(106%);
-      -webkit-backdrop-filter: blur(1px) saturate(106%);
       background: linear-gradient(135deg,
-        rgba(255, 255, 255, 0.025) 0%,
-        rgba(255, 255, 255, 0)     45%,
-        rgba(133, 183, 235, 0.025) 100%);
+        rgba(255, 255, 255, 0.03) 0%,
+        rgba(255, 255, 255, 0)    45%,
+        rgba(133, 183, 235, 0.03) 100%);
     }
 
-    /* Conteúdo das seções ACIMA do peixe e do vidro */
-    main .container { position: relative; z-index: 3; }
+    /* Conteúdo acima do peixe e do vidro */
+    main .container, footer .container { position: relative; z-index: 3; }
 
     /* =============================================
-       VITÓRIA-RÉGIA — folhas boiando no rio
-       Posicionadas no documento (rolam com a página) com
-       parallax de baixo para cima, como boiando na correnteza.
-       Acima do peixe (z1), atrás do conteúdo (z3).
+       VITÓRIA-RÉGIA — folhas boiando (parallax)
     ============================================= */
-    body { position: relative; }   /* containing block das folhas */
+    body { position: relative; }
 
     .lily {
       position: absolute;
-      z-index: 2;                  /* acima do peixe, atrás do conteúdo */
+      z-index: 2;
       pointer-events: none;
       height: auto;
       aspect-ratio: 1 / 1;
       will-change: transform;
-      /* recorta a folha circular, descartando o fundo escuro da imagem */
+      opacity: 0.55;               /* folhas como textura: não competem com o texto */
       -webkit-mask-image: radial-gradient(circle closest-side at 50% 50%, #000 88%, transparent 99%);
               mask-image: radial-gradient(circle closest-side at 50% 50%, #000 88%, transparent 99%);
       filter: drop-shadow(0 10px 22px rgba(2, 18, 38, 0.45));
     }
-
-    /* instâncias — tamanhos e posições diferentes */
     .lily--1 { top: 18%; right: -7%; width: clamp(190px, 34vw, 380px); }
     .lily--2 { top: 45%; left:  -9%; width: clamp(140px, 24vw, 260px); }
     .lily--3 { top: 71%; right:  3%; width: clamp(100px, 18vw, 180px); }
-    .lily--4 { top: 30%; left:  50%; width: clamp(220px, 44vw, 460px); } /* grande, centralizada */
+    .lily--4 { top: 30%; left:  50%; width: clamp(220px, 44vw, 460px); }
 
     @media (prefers-reduced-motion: reduce) {
-      #fish-layer   { display: none !important; }
-      #liquid-glass { display: none !important; }
+      #fish-layer, #liquid-glass { display: none !important; }
       #hero-video, #hero-content { transform: none !important; }
       .lily { transform: none !important; }
+      .js .hero-in { opacity: 1; }
     }
 
     /* =============================================
-       LANGUAGE SWITCHER
+       SELETOR DE IDIOMA
     ============================================= */
     .lang-switch { position: relative; }
     .lang-switch__btn {
@@ -344,7 +380,7 @@
       align-items: center;
       gap: 6px;
       background: transparent;
-      border: 1px solid var(--c-white-20, rgba(255,255,255,0.2));
+      border: 1px solid var(--c-white-20);
       color: inherit;
       font: inherit;
       font-size: var(--text-sm);
@@ -353,7 +389,6 @@
       cursor: pointer;
     }
     .lang-switch__list {
-      list-style: none;
       margin: 6px 0 0;
       padding: 6px;
       position: absolute;
@@ -372,67 +407,55 @@
     }
     .lang-switch:hover .lang-switch__list,
     .lang-switch:focus-within .lang-switch__list,
-    .lang-switch.is-open .lang-switch__list {
-      opacity: 1;
-      visibility: visible;
-      transform: translateY(0);
-    }
+    .lang-switch.is-open .lang-switch__list { opacity: 1; visibility: visible; transform: translateY(0); }
     .lang-switch__list a {
       display: block;
       padding: 8px 10px;
       border-radius: 8px;
       font-size: var(--text-sm);
       color: var(--c-primary);
-      text-decoration: none;
     }
     .lang-switch__list a:hover,
-    .lang-switch__list a[aria-current="true"] {
-      background: var(--c-neutral);
-    }
+    .lang-switch__list a[aria-current="true"] { background: var(--c-neutral); }
   </style>
 </head>
 <body>
+
+  <a href="#conteudo" class="skip-link">跳到正文</a>
 
   <!-- Pirarucu — sequência de imagens guiada pelo scroll -->
   <div id="fish-layer" aria-hidden="true">
     <canvas id="fish-canvas" width="640" height="360"></canvas>
   </div>
-
-  <!-- Liquid glass — camada leve entre o peixe e o conteúdo -->
   <div id="liquid-glass" aria-hidden="true"></div>
 
   <!-- Vitória-régia — folhas boiando no rio (parallax) -->
-  <img class="lily lily--1" src="../assets/vitoria_regia.png" alt="" aria-hidden="true" />
-  <img class="lily lily--2" src="../assets/vitoria_regia.png" alt="" aria-hidden="true" />
-  <img class="lily lily--3" src="../assets/vitoria_regia.png" alt="" aria-hidden="true" />
-  <img class="lily lily--4" src="../assets/vitoria_regia.png" alt="" aria-hidden="true" data-center />
+  <img class="lily lily--1" src="../assets/vitoria_regia.webp" width="900" height="900" alt="" loading="lazy" decoding="async" aria-hidden="true" />
+  <img class="lily lily--2" src="../assets/vitoria_regia.webp" width="900" height="900" alt="" loading="lazy" decoding="async" aria-hidden="true" />
+  <img class="lily lily--3" src="../assets/vitoria_regia.webp" width="900" height="900" alt="" loading="lazy" decoding="async" aria-hidden="true" />
+  <img class="lily lily--4" src="../assets/vitoria_regia.webp" width="900" height="900" alt="" loading="lazy" decoding="async" aria-hidden="true" data-center />
 
-  <!-- =============================================
-       PRELOADER
-  ============================================= -->
+  <!-- Preloader curto (marca) — o resto dos frames carrega em segundo plano -->
   <div id="preloader" role="status" aria-label="正在加载 Vitrine do Peixe">
     <canvas id="preloader-canvas" width="400" height="400" aria-hidden="true"></canvas>
-    <div id="preloader-bar-wrap" aria-hidden="true">
-      <div id="preloader-bar"></div>
-    </div>
+    <div id="preloader-bar-wrap" aria-hidden="true"><div id="preloader-bar"></div></div>
   </div>
 
   <!-- =============================================
        HEADER / NAV
   ============================================= -->
   <header>
-    <nav id="nav" class="nav" role="navigation" aria-label="主导航菜单">
-      <a href="./" class="nav__logo" aria-label="Vitrine do Peixe — 返回首页">
-        <img src="../assets/logo.png" alt="Vitrine do Peixe" />
+    <nav id="nav" class="nav" aria-label="主菜单">
+      <a href="./" class="nav__logo" aria-label="Vitrine do Peixe — 首页">
+        <img src="../assets/logo-nav.webp" width="142" height="40" alt="Vitrine do Peixe" />
       </a>
 
-      <!-- Links de navegação — visíveis a partir de 768px -->
-      <ul class="nav__links" role="list">
-        <li><a href="#sobre"         class="nav__link">关于我们</a></li>
+      <ul class="nav__links">
+        <li><a href="#sobre"         class="nav__link">关于</a></li>
         <li><a href="#produtor"      class="nav__link">生产者</a></li>
         <li><a href="#comprador"     class="nav__link">采购商</a></li>
-        <li><a href="#industria"     class="nav__link">行业企业</a></li>
-        <li><a href="#como-funciona" class="nav__link">运作方式</a></li>
+        <li><a href="#industria"     class="nav__link">加工业</a></li>
+        <li><a href="#como-funciona" class="nav__link">如何使用</a></li>
         <li><div class="lang-switch">
                   <button type="button" class="lang-switch__btn" aria-haspopup="true" aria-expanded="false" aria-label="语言">
                     <span aria-hidden="true">🌐</span> 中文
@@ -445,35 +468,27 @@
                   </div>
                 </div></li>
         <li>
-          <a href="https://vitrine-do-peixe-piloto.web.app/cadastro.html" class="btn btn--primary btn--sm">立即注册</a>
+          <a href="https://vitrine-do-peixe-piloto.web.app/cadastro.html" class="btn btn--primary btn--sm" data-cta="nav">注册</a>
         </li>
       </ul>
 
-      <!-- Botão hambúrguer — mobile only -->
-      <!-- ANIMATION: abrir/fechar menu mobile com slide down -->
-      <button class="nav__toggle" aria-label="打开菜单" aria-expanded="false" aria-controls="nav-mobile">
-        <span></span>
-        <span></span>
-        <span></span>
-      </button>
+      <div class="nav__end">
+        <a href="https://vitrine-do-peixe-piloto.web.app/cadastro.html" class="btn btn--primary btn--sm nav__cta-m" data-cta="nav-mobile">注册</a>
+        <button class="nav__toggle" aria-label="打开菜单" aria-expanded="false" aria-controls="nav-links">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
     </nav>
   </header>
 
-  <!-- =============================================
-       HERO
-  ============================================= -->
-  <main>
+  <main id="conteudo">
+
+    <!-- =============================================
+         HERO — proposta de valor (StoryBrand: o que é, para quem, como compra)
+    ============================================= -->
     <section id="hero" aria-labelledby="hero-title">
 
-      <video
-        id="hero-video"
-        autoplay
-        muted
-        loop
-        playsinline
-        preload="auto"
-        aria-hidden="true"
-      >
+      <video id="hero-video" autoplay muted loop playsinline preload="metadata" aria-hidden="true">
         <source src="../assets/video_hero.webm" type="video/webm" />
         <source src="../assets/video_hero.mp4" type="video/mp4" />
       </video>
@@ -481,167 +496,158 @@
       <div class="overlay" aria-hidden="true"></div>
 
       <div id="hero-content">
-
-        <div class="hero-eyebrow" aria-hidden="true">
-          <p>亚马逊渔业 B2B 平台</p>
-        </div>
+        <p class="hero-eyebrow hero-in" style="--i:0">Vitrine do Peixe — 亚马逊水产 B2B</p>
 
         <div class="hero-title-wrap">
-          <h1 id="hero-title">Vitrine<br>do Peixe</h1>
+          <h1 id="hero-title" class="hero-in" style="--i:1">亚马逊鱼类，<br>产地直达。</h1>
         </div>
 
-        <div id="hero-divider" aria-hidden="true"></div>
+        <p id="hero-subtitle" class="hero-in" style="--i:2">生产者被看见，采购商找得到。零佣金，没有中间商。</p>
 
-        <p id="hero-subtitle">连接生产与市场</p>
+        <div class="hero-actions hero-in" style="--i:3">
+          <a href="https://vitrine-do-peixe-piloto.web.app/cadastro.html" class="btn btn--primary btn--lg btn--arrow" data-cta="hero">免费注册</a>
+          <a href="#como-funciona" class="btn btn--outline btn--lg">了解如何使用</a>
+        </div>
 
+        <ul class="hero-trust hero-in" style="--i:4">
+          <li>免费</li>
+          <li>资料已核实</li>
+          <li>零佣金</li>
+        </ul>
       </div>
 
       <div id="hero-scroll" aria-hidden="true">
-        <span>探索更多</span>
+        <span>探索</span>
         <div class="scroll-chevron"></div>
       </div>
-
     </section>
 
 
     <!-- =============================================
-         #SOBRE — A vitrine que o peixe merecia
+         #SOBRE — o problema + 3 pilares (lista interativa)
     ============================================= -->
-    <section id="sobre" class="section" aria-labelledby="sobre-title">
+    <section id="sobre" class="section sheet section--light" aria-labelledby="sobre-title">
       <div class="container">
 
-        <header class="section-header scroll-reveal">
-          <h2 id="sobre-title">亚马逊渔业应得的展示平台</h2>
-          <div class="divider divider--center"></div>
-          <p>
-            Vitrine do Peixe 是 Bússola do Peixe Amazônico 项目的一部分，这是一家诞生于亚马逊地区的初创公司，使命明确：缩短优质亚马逊鱼类生产者与采购商之间的距离。
-          </p>
-          <p style="margin-top: var(--space-4);">
-            亚马逊生产者很难接触到本地区以外的采购商，而采购商也不知道去哪里寻找可靠的供应商。Vitrine 的存在正是为了简单地解决这个问题：让生产者被看见，让采购商找得到。
-          </p>
+        <header class="sec-head scroll-reveal">
+          <p class="tag">问题所在</p>
+          <h2 id="sobre-title" class="display">好的生产者，只能卖给熟人。</h2>
+          <div class="sec-head__lead">
+            <p>有些亚马逊生产者手握优质鱼货，却找不到本地区以外的买家。也有采购商想找可靠的供应商，却不知从何入手。</p>
+            <p>Vitrine 就是为了拉近这段距离而生。它是 Bússola do Peixe Amazônico 项目的一部分，这是一家诞生于亚马逊的初创公司：让生产者被看见，让采购商找得到。</p>
+          </div>
         </header>
 
-        <!-- 3 Pilares -->
-        <!-- ANIMATION: cards aparecem em cascata com stagger ao entrar na viewport -->
-        <div class="pillar-grid">
-
-          <article class="card pillar-card scroll-reveal" aria-label="来源保证">
-            <div class="card-icon">
-              <!-- ICON: shield-check — origem e rastreabilidade -->
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                <path d="M12 2l-7 4v5c0 4.55 3.17 8.81 7 9.93C15.83 19.81 19 15.55 19 11V6l-7-4z"/>
-                <polyline points="9 12 11 14 15 10"/>
-              </svg>
-            </div>
-            <h3>来源保证</h3>
-            <p>产品可追溯，直接来自亚马逊产地。</p>
-          </article>
-
-          <article class="card pillar-card scroll-reveal" aria-label="直接对接">
-            <div class="card-icon">
-              <!-- ICON: network/link — conexão entre pontas da cadeia -->
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                <circle cx="18" cy="5"  r="3"/>
-                <circle cx="6"  cy="12" r="3"/>
-                <circle cx="18" cy="19" r="3"/>
-                <line x1="8.59"  y1="13.51" x2="15.42" y2="17.49"/>
-                <line x1="15.41" y1="6.51"  x2="8.59"  y2="10.49"/>
-              </svg>
-            </div>
-            <h3>直接对接</h3>
-            <p>生产者与采购商直接接触，省去不必要的中间环节。</p>
-          </article>
-
-          <article class="card pillar-card scroll-reveal" aria-label="真实影响">
-            <div class="card-icon">
-              <!-- ICON: trending-up — crescimento e impacto econômico -->
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                <polyline points="23 6 13.5 15.5 8.5 10.5 1 18"/>
-                <polyline points="17 6 23 6 23 12"/>
-              </svg>
-            </div>
-            <h3>真实影响</h3>
-            <p>我们致力于加强本地生产链和可持续的亚马逊经济。</p>
-          </article>
-
-        </div><!-- /pillar-grid -->
+        <ol class="rows" data-stagger>
+          <li class="row scroll-reveal">
+            <span class="row__num" aria-hidden="true">01</span>
+            <h3 class="row__title">来源有保障</h3>
+            <p class="row__desc">可追溯、产地明确，从河流直达您的生意。</p>
+            <span class="row__arrow" aria-hidden="true">→</span>
+          </li>
+          <li class="row scroll-reveal">
+            <span class="row__num" aria-hidden="true">02</span>
+            <h3 class="row__title">直接联系</h3>
+            <p class="row__desc">生产者与采购商直接沟通，中间没有多余的环节。</p>
+            <span class="row__arrow" aria-hidden="true">→</span>
+          </li>
+          <li class="row scroll-reveal">
+            <span class="row__num" aria-hidden="true">03</span>
+            <h3 class="row__title">真实影响</h3>
+            <p class="row__desc">壮大本地产业链，推动可持续的亚马逊经济。</p>
+            <span class="row__arrow" aria-hidden="true">→</span>
+          </li>
+        </ol>
 
       </div>
     </section>
 
 
     <!-- =============================================
-         #PRODUTOR — Para Produtores
+         #GARANTIAS — quebra de objeções com fatos do produto
+         (espaço reservado para depoimentos reais quando existirem)
     ============================================= -->
-    <section id="produtor" class="section section--dark" aria-labelledby="produtor-title">
+    <section id="garantias" class="section sheet section--blue" aria-labelledby="garantias-title">
       <div class="container">
 
-        <header class="section-header scroll-reveal">
-          <span class="badge badge--cta">生产者免费注册</span>
-          <h2 id="produtor-title">您的产品值得被看见</h2>
-          <div class="divider divider--center"></div>
-          <p style="color: var(--c-white); text-shadow: 0 2px 12px rgba(2, 18, 38, 0.9), 0 0 4px rgba(2, 18, 38, 0.7);">
-            许多亚马逊生产者只能卖给熟人，并非产品不够好，而是缺乏曝光渠道。在 Vitrine 上，您将拥有公开档案，展示产品、所在地区和联系方式。来自巴西各地的采购商都可以直接找到并联系您。
-          </p>
-          <p style="margin-top: var(--space-4); color: var(--c-white); text-shadow: 0 2px 12px rgba(2, 18, 38, 0.9), 0 0 4px rgba(2, 18, 38, 0.7);">
-            Bússola 不介入交易协商，也不对任何销售收取佣金。交易条件完全由您与采购商双方自行商定。
-          </p>
+        <header class="sec-head sec-head--compact scroll-reveal">
+          <p class="tag">您可以期待</p>
+          <h2 id="garantias-title" class="display display--sm">三条不变的规则。</h2>
         </header>
 
-        <!-- ANIMATION: cards em cascata com stagger -->
-        <div class="benefit-grid">
+        <ul class="stats" data-stagger>
+          <li class="stat scroll-reveal">
+            <strong class="stat__value">0%</strong>
+            <span class="stat__label">佣金</span>
+            <p class="stat__desc">Bússola 不从您的销售中抽取任何费用。</p>
+          </li>
+          <li class="stat scroll-reveal">
+            <strong class="stat__value">100%</strong>
+            <span class="stat__label">资料已核实</span>
+            <p class="stat__desc">每份资料在上线前都会经过核实。</p>
+          </li>
+          <li class="stat scroll-reveal">
+            <strong class="stat__value">免费</strong>
+            <span class="stat__label">即可开始</span>
+            <p class="stat__desc">生产者和采购商注册与使用均免费。</p>
+          </li>
+        </ul>
 
-          <article class="card benefit-card scroll-reveal" aria-label="公开档案">
-            <div class="card-icon">
-              <!-- ICON: user — visibilidade pública -->
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                <path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"/>
-                <circle cx="12" cy="7" r="4"/>
-              </svg>
-            </div>
-            <h3>公开档案</h3>
-            <p>您的名称、产品和地区信息对全巴西的采购商可见。</p>
+      </div>
+    </section>
+
+
+    <!-- =============================================
+         #PRODUTOR — bento assimétrico (escuro)
+    ============================================= -->
+    <section id="produtor" class="section sheet section--dark" aria-labelledby="produtor-title">
+      <div class="container">
+
+        <header class="sec-head scroll-reveal">
+          <p class="tag">生产者免费注册</p>
+          <h2 id="produtor-title" class="display">您的产品值得被看见。</h2>
+          <div class="sec-head__lead">
+            <p>许多生产者只卖给熟人。不是产品不够好，而是触达不够广。在 Vitrine，您拥有公开的资料页，展示产品、地区和联系方式，巴西各地的采购商可以直接与您联系。</p>
+            <p>Bússola 不参与谈判，也不收取佣金。交易由您和采购商自行达成。</p>
+          </div>
+        </header>
+
+        <div class="bento" data-stagger>
+          <article class="bento__item bento__item--wide scroll-reveal">
+            <span class="bento__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+            </span>
+            <h3>公开资料页</h3>
+            <p>您的名称、产品和地区，展示给巴西各地的采购商。</p>
           </article>
 
-          <article class="card benefit-card scroll-reveal" aria-label="直接联系">
-            <div class="card-icon">
-              <!-- ICON: message-circle — comunicação direta -->
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                <path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/>
-              </svg>
-            </div>
+          <article class="bento__item scroll-reveal">
+            <span class="bento__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/></svg>
+            </span>
             <h3>直接联系</h3>
-            <p>采购商直接与您对话，无需冗长表单，无中间人。</p>
+            <p>采购商直接与您沟通。没有冗长表单，没有中间人。</p>
           </article>
 
-          <article class="card benefit-card scroll-reveal" aria-label="零佣金">
-            <div class="card-icon">
-              <!-- ICON: ban — sem taxa ou comissão -->
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                <circle cx="12" cy="12" r="10"/>
-                <line x1="4.93" y1="4.93" x2="19.07" y2="19.07"/>
-              </svg>
-            </div>
+          <article class="bento__item scroll-reveal">
+            <span class="bento__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="4.93" y1="4.93" x2="19.07" y2="19.07"/></svg>
+            </span>
             <h3>零佣金</h3>
-            <p>Bússola 不对您的销售收取任何费用，谈成的交易完全归您所有。</p>
+            <p>Bússola 不从您的销售中抽取任何费用。您谈成的，都是您的。</p>
           </article>
 
-          <article class="card benefit-card scroll-reveal" aria-label="信誉保障">
-            <div class="card-icon">
-              <!-- ICON: badge-check — verificação e confiança -->
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                <path d="M9 12l2 2 4-4"/>
-                <path d="M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z"/>
-              </svg>
-            </div>
-            <h3>信誉保障</h3>
-            <p>经过验证的档案能为首次采购的客户带来更多信任。</p>
+          <article class="bento__item bento__item--wide scroll-reveal">
+            <span class="bento__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M9 12l2 2 4-4"/><path d="M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z"/></svg>
+            </span>
+            <h3>可信度</h3>
+            <p>经过核实的资料，更容易赢得首次采购商的信任。</p>
           </article>
-
-        </div><!-- /benefit-grid -->
+        </div>
 
         <div class="section-cta scroll-reveal">
-          <a href="https://vitrine-do-peixe-piloto.web.app/cadastro.html?perfil=produtor" class="btn btn--primary btn--lg">以生产者身份注册</a>
+          <a href="https://vitrine-do-peixe-piloto.web.app/cadastro.html?perfil=produtor" class="btn btn--primary btn--lg btn--arrow" data-cta="produtor">以生产者身份注册</a>
         </div>
 
       </div>
@@ -649,74 +655,55 @@
 
 
     <!-- =============================================
-         #COMPRADOR — Para Compradores
+         #COMPRADOR — bento espelhado (claro)
     ============================================= -->
-    <section id="comprador" class="section" aria-labelledby="comprador-title">
+    <section id="comprador" class="section sheet section--light" aria-labelledby="comprador-title">
       <div class="container">
 
-        <header class="section-header scroll-reveal">
-          <span class="badge badge--support">采购商免费使用</span>
-          <h2 id="comprador-title">找到合适的鱼，来自可靠的产地</h2>
-          <div class="divider divider--center"></div>
-          <p>
-            在 Vitrine 上，您可以按鱼种、地区或可用数量搜索生产者，并直接与生产方联系。无手续费，无中间环节，无意外惊喜。Bússola 负责连接双方，让协商在您和生产者之间自由进行。
-          </p>
+        <header class="sec-head sec-head--right scroll-reveal">
+          <p class="tag">采购商免费使用</p>
+          <h2 id="comprador-title" class="display">在对的产地，找到对的鱼。</h2>
+          <div class="sec-head__lead">
+            <p>按品种、地区或可供数量搜索生产者，直接与生产者沟通。没有费用，没有中间环节，没有意外。Bússola 连接双方，谈判在你们之间进行。</p>
+          </div>
         </header>
 
-        <!-- ANIMATION: cards em cascata com stagger -->
-        <div class="benefit-grid">
-
-          <article class="card benefit-card scroll-reveal" aria-label="按鱼种和地区搜索">
-            <div class="card-icon">
-              <!-- ICON: search — busca e filtro -->
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                <circle cx="11" cy="11" r="8"/>
-                <line x1="21" y1="21" x2="16.65" y2="16.65"/>
-              </svg>
-            </div>
-            <h3>按鱼种和地区搜索</h3>
-            <p>按鱼类种类、所在地和可用量筛选，快速找到所需产品。</p>
+        <div class="bento bento--mirror" data-stagger>
+          <article class="bento__item scroll-reveal">
+            <span class="bento__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+            </span>
+            <h3>按品种和地区搜索</h3>
+            <p>按鱼的种类、位置和供货情况筛选，找到您需要的产品。</p>
           </article>
 
-          <article class="card benefit-card scroll-reveal" aria-label="生产者经过验证">
-            <div class="card-icon">
-              <!-- ICON: badge-check — verificação -->
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                <path d="M9 12l2 2 4-4"/>
-                <path d="M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z"/>
-              </svg>
-            </div>
-            <h3>生产者经过验证</h3>
-            <p>所有档案在上线平台前都经过审核。</p>
+          <article class="bento__item bento__item--wide scroll-reveal">
+            <span class="bento__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M9 12l2 2 4-4"/><path d="M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z"/></svg>
+            </span>
+            <h3>生产者已核实</h3>
+            <p>每份资料在上线前都会经过核实。</p>
           </article>
 
-          <article class="card benefit-card scroll-reveal" aria-label="直接协商">
-            <div class="card-icon">
-              <!-- ICON: message-circle — negociação direta -->
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                <path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/>
-              </svg>
-            </div>
-            <h3>直接协商</h3>
-            <p>与生产者直接沟通，敲定细节，无需通过第三方。</p>
+          <article class="bento__item bento__item--wide scroll-reveal">
+            <span class="bento__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/></svg>
+            </span>
+            <h3>直接谈判</h3>
+            <p>直接与生产者沟通，敲定细节，无需第三方。</p>
           </article>
 
-          <article class="card benefit-card scroll-reveal" aria-label="亚马逊特色鱼种">
-            <div class="card-icon">
-              <!-- ICON: map-pin — origem amazônica -->
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/>
-                <circle cx="12" cy="10" r="3"/>
-              </svg>
-            </div>
-            <h3>亚马逊特色鱼种</h3>
-            <p>获取常规渠道难以见到的本地原生鱼种。</p>
+          <article class="bento__item scroll-reveal">
+            <span class="bento__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            </span>
+            <h3>亚马逊品种</h3>
+            <p>接触巨骨舌鱼等本地品种，这些鱼很少通过常规渠道流通。</p>
           </article>
-
-        </div><!-- /benefit-grid -->
+        </div>
 
         <div class="section-cta scroll-reveal">
-          <a href="https://vitrine-do-peixe-piloto.web.app/cadastro.html?perfil=comprador" class="btn btn--blue btn--lg">以采购商身份注册</a>
+          <a href="https://vitrine-do-peixe-piloto.web.app/cadastro.html?perfil=comprador" class="btn btn--blue btn--lg btn--arrow" data-cta="comprador">以采购商身份注册</a>
         </div>
 
       </div>
@@ -724,77 +711,48 @@
 
 
     <!-- =============================================
-         #INDUSTRIA — Para a Indústria
+         #INDUSTRIA — lista interativa (escuro)
     ============================================= -->
-    <section id="industria" class="section section--dark" aria-labelledby="industria-title">
+    <section id="industria" class="section sheet section--dark" aria-labelledby="industria-title">
       <div class="container">
 
-        <header class="section-header scroll-reveal">
-          <h2 id="industria-title">直接对接亚马逊生产端</h2>
-          <div class="divider divider--center"></div>
-          <p>
-            Vitrine 也是希望更贴近亚马逊生产端的企业的合作渠道。您可以找到生产者、协商采购量，还能在平台上发布产品广告和促销活动，触达已在该行业内的目标受众。
-          </p>
+        <header class="sec-head scroll-reveal">
+          <p class="tag">面向加工业</p>
+          <h2 id="industria-title" class="display">直达亚马逊产区。</h2>
+          <div class="sec-head__lead">
+            <p>Vitrine 也是加工企业接近亚马逊生产者的渠道。寻找生产者、洽谈数量，并向本行业受众发布您的产品和促销信息。</p>
+          </div>
         </header>
 
-        <!-- ANIMATION: cards em cascata com stagger -->
-        <div class="benefit-grid">
-
-          <article class="card benefit-card scroll-reveal" aria-label="直接联系生产者">
-            <div class="card-icon">
-              <!-- ICON: users — acesso a produtores -->
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                <path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/>
-                <circle cx="9" cy="7" r="4"/>
-                <path d="M23 21v-2a4 4 0 00-3-3.87"/>
-                <path d="M16 3.13a4 4 0 010 7.75"/>
-              </svg>
-            </div>
-            <h3>直接联系生产者</h3>
-            <p>与生产者直接协商，无需经过中间商。</p>
-          </article>
-
-          <article class="card benefit-card scroll-reveal" aria-label="平台广告投放">
-            <div class="card-icon">
-              <!-- ICON: send/megaphone — divulgação e anúncios -->
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                <path d="M3 11l19-9-9 19-2-8-8-2z"/>
-              </svg>
-            </div>
-            <h3>平台广告投放</h3>
-            <p>向亚马逊渔业领域的精准受众推广您的产品。</p>
-          </article>
-
-          <article class="card benefit-card scroll-reveal" aria-label="促销与营销活动">
-            <div class="card-icon">
-              <!-- ICON: tag — promoções e ofertas -->
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                <path d="M20.59 13.41l-7.17 7.17a2 2 0 01-2.83 0L2 12V2h10l8.59 8.59a2 2 0 010 2.82z"/>
-                <line x1="7" y1="7" x2="7.01" y2="7"/>
-              </svg>
-            </div>
-            <h3>促销与营销活动</h3>
-            <p>直接在 Vitrine 平台上发布季节性优惠和营销活动。</p>
-          </article>
-
-          <article class="card benefit-card scroll-reveal" aria-label="供应总览">
-            <div class="card-icon">
-              <!-- ICON: bar-chart — panorama da produção disponível -->
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                <line x1="18" y1="20" x2="18" y2="10"/>
-                <line x1="12" y1="20" x2="12" y2="4"/>
-                <line x1="6"  y1="20" x2="6"  y2="14"/>
-                <line x1="2"  y1="20" x2="22" y2="20"/>
-              </svg>
-            </div>
-            <h3>供应总览</h3>
-            <p>查看亚马逊地区现有的生产供应情况，助力您的需求规划。</p>
-          </article>
-
-        </div><!-- /benefit-grid -->
+        <ol class="rows" data-stagger>
+          <li class="row scroll-reveal">
+            <span class="row__num" aria-hidden="true">01</span>
+            <h3 class="row__title">联系生产者</h3>
+            <p class="row__desc">直接与生产者洽谈，没有中间商。</p>
+            <span class="row__arrow" aria-hidden="true">→</span>
+          </li>
+          <li class="row scroll-reveal">
+            <span class="row__num" aria-hidden="true">02</span>
+            <h3 class="row__title">平台广告</h3>
+            <p class="row__desc">向亚马逊渔业领域的精准受众推广您的产品。</p>
+            <span class="row__arrow" aria-hidden="true">→</span>
+          </li>
+          <li class="row scroll-reveal">
+            <span class="row__num" aria-hidden="true">03</span>
+            <h3 class="row__title">促销与活动</h3>
+            <p class="row__desc">直接在 Vitrine 上发布优惠和季节性活动。</p>
+            <span class="row__arrow" aria-hidden="true">→</span>
+          </li>
+          <li class="row scroll-reveal">
+            <span class="row__num" aria-hidden="true">04</span>
+            <h3 class="row__title">供应概览</h3>
+            <p class="row__desc">了解亚马逊产区目前有哪些货源，规划您的需求。</p>
+            <span class="row__arrow" aria-hidden="true">→</span>
+          </li>
+        </ol>
 
         <div class="section-cta scroll-reveal">
-          <a href="#contato" class="btn btn--outline btn--lg">联系我们的团队</a>
+          <a href="https://vitrine-do-peixe-piloto.web.app/cadastro.html" class="btn btn--outline btn--lg btn--arrow" data-cta="industria">从注册开始</a>
         </div>
 
       </div>
@@ -802,255 +760,371 @@
 
 
     <!-- =============================================
-         #COMO-FUNCIONA — Como Funciona
+         #COMO-FUNCIONA — abas por perfil
+         (sem JS, os 3 painéis aparecem empilhados)
     ============================================= -->
-    <section id="como-funciona" class="section" aria-labelledby="como-funciona-title">
+    <section id="como-funciona" class="section sheet section--light" aria-labelledby="como-funciona-title">
       <div class="container">
 
-        <header class="section-header scroll-reveal">
-          <h2 id="como-funciona-title">人人都能轻松上手</h2>
-          <div class="divider divider--center"></div>
-          <p>注册免费，只需几分钟。了解每种身份如何使用本平台。</p>
+        <header class="sec-head scroll-reveal">
+          <p class="tag">如何使用</p>
+          <h2 id="como-funciona-title" class="display">人人都能轻松上手。</h2>
+          <div class="sec-head__lead">
+            <p>注册免费，只需几分钟。选择您的身份，查看步骤。</p>
+          </div>
         </header>
 
-        <!-- 3 colunas de perfil -->
-        <!-- ANIMATION: colunas entram em cascata com stagger horizontal -->
-        <div class="how-grid">
+        <div class="tabs scroll-reveal" data-tabs>
+          <div class="tabs__list" role="tablist" aria-label="选择您的身份">
+            <button type="button" class="tabs__tab is-active" role="tab" id="tab-produtor" aria-controls="panel-produtor" aria-selected="true" data-href="https://vitrine-do-peixe-piloto.web.app/cadastro.html?perfil=produtor">
+              <span class="tabs__dot tabs__dot--produtor" aria-hidden="true"></span>生产者
+            </button>
+            <button type="button" class="tabs__tab" role="tab" id="tab-comprador" aria-controls="panel-comprador" aria-selected="false" tabindex="-1" data-href="https://vitrine-do-peixe-piloto.web.app/cadastro.html?perfil=comprador">
+              <span class="tabs__dot tabs__dot--comprador" aria-hidden="true"></span>采购商
+            </button>
+            <button type="button" class="tabs__tab" role="tab" id="tab-industria" aria-controls="panel-industria" aria-selected="false" tabindex="-1" data-href="https://vitrine-do-peixe-piloto.web.app/cadastro.html">
+              <span class="tabs__dot tabs__dot--industria" aria-hidden="true"></span>加工业
+            </button>
+          </div>
 
-          <!-- Coluna: Produtor -->
-          <div class="how-column how-column--produtor scroll-reveal">
-            <div class="how-column__header">
-              <span class="how-column__profile-dot" aria-hidden="true"></span>
-              <span class="how-column__profile-name">生产者</span>
-            </div>
-            <ol class="how-column__steps" aria-label="生产者操作步骤">
-              <li class="step">
-                <span class="step__number" aria-hidden="true">1</span>
-                <div class="step__content">
-                  <strong class="step__title">创建账户</strong>
-                  <p class="step__text">访问平台并选择“生产者”身份，注册完全免费。</p>
-                </div>
-              </li>
-              <li class="step">
-                <span class="step__number" aria-hidden="true">2</span>
-                <div class="step__content">
-                  <strong class="step__title">完善档案</strong>
-                  <p class="step__text">填写您的所在地、生产的鱼种以及可供应的数量。</p>
-                </div>
-              </li>
-              <li class="step">
-                <span class="step__number" aria-hidden="true">3</span>
-                <div class="step__content">
-                  <strong class="step__title">等待审核</strong>
-                  <p class="step__text">我们的团队会在您的档案对采购商公开前进行验证。</p>
-                </div>
-              </li>
-              <li class="step">
-                <span class="step__number" aria-hidden="true">4</span>
-                <div class="step__content">
-                  <strong class="step__title">接收联系</strong>
-                  <p class="step__text">感兴趣的采购商会直接联系您进行协商。</p>
-                </div>
-              </li>
+          <div class="tabs__panel" role="tabpanel" id="panel-produtor" aria-labelledby="tab-produtor" tabindex="0">
+            <ol class="steps" aria-label="生产者步骤">
+              <li class="step"><span class="step__n" aria-hidden="true">01</span><h3 class="step__title">创建账户</h3><p class="step__text">进入平台并选择“生产者”身份。注册免费。</p></li>
+              <li class="step"><span class="step__n" aria-hidden="true">02</span><h3 class="step__title">完善资料</h3><p class="step__text">填写您的所在地、养殖或捕捞的品种以及可供数量。</p></li>
+              <li class="step"><span class="step__n" aria-hidden="true">03</span><h3 class="step__title">等待核实</h3><p class="step__text">我们的团队会先核实您的资料，再向采购商展示。</p></li>
+              <li class="step"><span class="step__n" aria-hidden="true">04</span><h3 class="step__title">接收联系</h3><p class="step__text">有意向的采购商会直接联系您洽谈。</p></li>
             </ol>
           </div>
 
-          <!-- Coluna: Comprador -->
-          <div class="how-column how-column--comprador scroll-reveal">
-            <div class="how-column__header">
-              <span class="how-column__profile-dot" aria-hidden="true"></span>
-              <span class="how-column__profile-name">采购商</span>
-            </div>
-            <ol class="how-column__steps" aria-label="采购商操作步骤">
-              <li class="step">
-                <span class="step__number" aria-hidden="true">1</span>
-                <div class="step__content">
-                  <strong class="step__title">创建账户</strong>
-                  <p class="step__text">访问平台并选择“采购商”身份，完全免费使用。</p>
-                </div>
-              </li>
-              <li class="step">
-                <span class="step__number" aria-hidden="true">2</span>
-                <div class="step__content">
-                  <strong class="step__title">搜索生产者</strong>
-                  <p class="step__text">按鱼种、地区或可用数量筛选，直到找到所需产品。</p>
-                </div>
-              </li>
-              <li class="step">
-                <span class="step__number" aria-hidden="true">3</span>
-                <div class="step__content">
-                  <strong class="step__title">发起联系</strong>
-                  <p class="step__text">点击生产者档案，直接与其开始对话。</p>
-                </div>
-              </li>
-              <li class="step">
-                <span class="step__number" aria-hidden="true">4</span>
-                <div class="step__content">
-                  <strong class="step__title">协商并成交</strong>
-                  <p class="step__text">价格、数量和物流由您与生产者直接商定。</p>
-                </div>
-              </li>
+          <div class="tabs__panel" role="tabpanel" id="panel-comprador" aria-labelledby="tab-comprador" tabindex="0">
+            <ol class="steps" aria-label="采购商步骤">
+              <li class="step"><span class="step__n" aria-hidden="true">01</span><h3 class="step__title">创建账户</h3><p class="step__text">进入平台并选择“采购商”身份。使用免费。</p></li>
+              <li class="step"><span class="step__n" aria-hidden="true">02</span><h3 class="step__title">搜索生产者</h3><p class="step__text">按品种、地区或可供数量筛选，直到找到您需要的。</p></li>
+              <li class="step"><span class="step__n" aria-hidden="true">03</span><h3 class="step__title">取得联系</h3><p class="step__text">打开生产者资料页，直接开始沟通。</p></li>
+              <li class="step"><span class="step__n" aria-hidden="true">04</span><h3 class="step__title">洽谈成交</h3><p class="step__text">价格、数量和物流由您与生产者自行约定。</p></li>
             </ol>
           </div>
 
-          <!-- Coluna: Indústria -->
-          <div class="how-column how-column--industria scroll-reveal">
-            <div class="how-column__header">
-              <span class="how-column__profile-dot" aria-hidden="true"></span>
-              <span class="how-column__profile-name">行业企业</span>
-            </div>
-            <ol class="how-column__steps" aria-label="行业企业操作步骤">
-              <li class="step">
-                <span class="step__number" aria-hidden="true">1</span>
-                <div class="step__content">
-                  <strong class="step__title">联系我们</strong>
-                  <p class="step__text">与我们的团队沟通，介绍您的企业并了解可用方案。</p>
-                </div>
-              </li>
-              <li class="step">
-                <span class="step__number" aria-hidden="true">2</span>
-                <div class="step__content">
-                  <strong class="step__title">对接生产者</strong>
-                  <p class="step__text">按鱼种、地区和数量搜索供应商，方式与采购商身份相同。</p>
-                </div>
-              </li>
-              <li class="step">
-                <span class="step__number" aria-hidden="true">3</span>
-                <div class="step__content">
-                  <strong class="step__title">平台投放广告</strong>
-                  <p class="step__text">设置广告和促销活动，向 Vitrine 用户展示。</p>
-                </div>
-              </li>
-              <li class="step">
-                <span class="step__number" aria-hidden="true">4</span>
-                <div class="step__content">
-                  <strong class="step__title">直接协商</strong>
-                  <p class="step__text">与生产者的联系完全直接进行。Bússola 不介入协商，也不收取佣金。</p>
-                </div>
-              </li>
+          <div class="tabs__panel" role="tabpanel" id="panel-industria" aria-labelledby="tab-industria" tabindex="0">
+            <ol class="steps" aria-label="加工业步骤">
+              <li class="step"><span class="step__n" aria-hidden="true">01</span><h3 class="step__title">注册</h3><p class="step__text">介绍您的企业，了解面向加工业的可用方案。</p></li>
+              <li class="step"><span class="step__n" aria-hidden="true">02</span><h3 class="step__title">接触生产者</h3><p class="step__text">按品种、地区和数量搜索供应商，与采购商身份相同。</p></li>
+              <li class="step"><span class="step__n" aria-hidden="true">03</span><h3 class="step__title">平台投放</h3><p class="step__text">设置广告和促销，让 Vitrine 用户看到您。</p></li>
+              <li class="step"><span class="step__n" aria-hidden="true">04</span><h3 class="step__title">直接洽谈</h3><p class="step__text">与生产者直接联系。Bússola 不居中撮合，也不收取佣金。</p></li>
             </ol>
           </div>
+        </div>
 
-        </div><!-- /how-grid -->
-
-        <!-- Bloco de aviso -->
-        <aside class="disclaimer scroll-reveal" role="note">
-          <p>
-            <strong>Bússola 不收取佣金，也不介入协商过程。</strong>
-            生产者和采购商使用 Vitrine 完全免费。我们的职责是连接双方，之后发生的一切均由双方自行决定。
-          </p>
-        </aside>
-
-        <div class="section-cta scroll-reveal">
-          <a href="https://vitrine-do-peixe-piloto.web.app/cadastro.html" class="btn btn--primary btn--lg">免费注册</a>
+        <div class="how-foot scroll-reveal">
+          <aside class="disclaimer" role="note">
+            <p><strong>Bússola 不收取佣金，也不居中撮合交易。</strong> 生产者和采购商均可免费使用 Vitrine。我们的职责是连接双方，之后的事情由你们自行决定。</p>
+          </aside>
+          <a href="https://vitrine-do-peixe-piloto.web.app/cadastro.html?perfil=produtor" id="como-cta" class="btn btn--primary btn--lg btn--arrow" data-cta="como-funciona">免费注册</a>
         </div>
 
       </div>
     </section>
 
+
+    <!-- =============================================
+         #FAQ — objeções (rich result FAQPage via JSON-LD)
+    ============================================= -->
+    <section id="faq" class="section sheet section--white" aria-labelledby="faq-title">
+      <div class="container">
+        <div class="faq">
+          <header class="faq__head scroll-reveal">
+            <p class="tag">常见问题</p>
+            <h2 id="faq-title" class="display display--sm">开始之前，大家都会问的问题。</h2>
+          </header>
+
+          <div class="faq__list scroll-reveal">
+            <details class="faq__item" name="faq">
+              <summary><span>使用 Vitrine 要花多少钱？</span></summary>
+              <p>完全免费。生产者和采购商的注册与使用都不收费。</p>
+            </details>
+            <details class="faq__item" name="faq">
+              <summary><span>Vitrine 会从销售中收取佣金吗？</span></summary>
+              <p>不会。Bússola 不参与谈判，也不收取佣金。价格、数量和物流由您与对方自行约定。</p>
+            </details>
+            <details class="faq__item" name="faq">
+              <summary><span>如何确定生产者可靠？</span></summary>
+              <p>每份资料在上线前都会经过我们团队的核实。首次联系之后，沟通与协议由你们双方自行完成。</p>
+            </details>
+            <details class="faq__item" name="faq">
+              <summary><span>注册之后会发生什么？</span></summary>
+              <p>您创建账户并选择身份。每个注册申请都会先经过我们团队审核，通过后才能首次登录平台。</p>
+            </details>
+            <details class="faq__item" name="faq">
+              <summary><span>谁可以参与？</span></summary>
+              <p>从事亚马逊鱼类相关业务的生产者、养殖户、采购商和加工企业。</p>
+            </details>
+            <details class="faq__item" name="faq">
+              <summary><span>我必须通过 Vitrine 进行谈判吗？</span></summary>
+              <p>不必。Vitrine 连接双方，谈判直接在你们之间进行，用对你们双方最合适的方式。</p>
+            </details>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- =============================================
+         CTA FINAL — segmenta por perfil (um clique, um destino)
+    ============================================= -->
+    <section id="cadastro" class="section sheet section--dark final" aria-labelledby="final-title">
+      <div class="container">
+        <div class="final__inner scroll-reveal">
+          <h2 id="final-title" class="display">您的下一笔生意，从一份资料开始。</h2>
+          <p class="final__text">免费，只需几分钟，而且不会从您的销售中收取任何佣金。</p>
+          <div class="final__actions">
+            <a href="https://vitrine-do-peixe-piloto.web.app/cadastro.html?perfil=produtor" class="btn btn--primary btn--lg btn--arrow" data-cta="final-produtor">我是生产者</a>
+            <a href="https://vitrine-do-peixe-piloto.web.app/cadastro.html?perfil=comprador" class="btn btn--outline btn--lg btn--arrow" data-cta="final-comprador">我是采购商</a>
+          </div>
+        </div>
+      </div>
+    </section>
 
   </main>
 
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div>
+          <p class="footer__brand">Vitrine do Peixe</p>
+          <p class="footer__about">Vitrine do Peixe 是 Bússola do Peixe Amazônico 项目的一部分。</p>
+        </div>
+        <nav class="footer__nav" aria-label="常见问题">
+          <a href="#sobre">关于</a>
+          <a href="#produtor">生产者</a>
+          <a href="#comprador">采购商</a>
+          <a href="#industria">加工业</a>
+          <a href="#como-funciona">如何使用</a>
+          <a href="#faq">常见问题</a>
+        </nav>
+      </div>
+      <p class="footer__legal">© 2026 Vitrine do Peixe. 版权所有。</p>
+    </div>
+  </footer>
+
   <script>
-    /* --------------------------------------------------
-       PRELOADER — animação de frames do pirarucu
-    -------------------------------------------------- */
     (function () {
-      const canvas      = document.getElementById('preloader-canvas');
-      const ctx         = canvas.getContext('2d');
-      const progressBar = document.getElementById('preloader-bar');
-      const preloader   = document.getElementById('preloader');
+      'use strict';
 
-      const TOTAL    = 240;
-      const FPS      = 48;
-      const INTERVAL = 1000 / FPS;
-      const BASE     = '../assets/pirarucu/frames_pirarucu_webp/';
+      var reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
-      const frames = new Array(TOTAL);
-      window._piraFrames = frames; /* expõe para o scroll-sequence */
-      let loaded   = 0;
-      let current  = 0;
-      let lastTime = 0;
-      let animDone = false;
-      let pageDone = false;
+      /* ==================================================
+         FRAMES DO PIRARUCU — carga progressiva
+         Os primeiros frames sobem com a página (preloader curto);
+         o resto chega em segundo plano depois do "load". A sequência
+         usa sempre o trecho contíguo já carregado (P.ready).
+      ================================================== */
+      var TOTAL  = 240;
+      var BASE   = '../assets/pirarucu/frames_pirarucu_webp/';
+      var conn   = navigator.connection || {};
+      var lite   = conn.saveData || /(^|-)2g$/.test(conn.effectiveType || '');
+      var LIMIT  = lite ? 60 : TOTAL;
+      var P      = window._pira = { frames: new Array(TOTAL), ready: 0 };
+      var done   = new Array(TOTAL);
+      var cap    = 40;                 /* antes do load: só o necessário p/ o preloader */
+      var next   = 0, inflight = 0, CONC = 6;
 
-      function startHeroAnimations() {
-        document.querySelector('.hero-eyebrow').classList.add('hero-anim-eyebrow');
-        document.getElementById('hero-title').classList.add('hero-anim-title');
-        document.getElementById('hero-divider').classList.add('hero-anim-divider');
-        document.getElementById('hero-subtitle').classList.add('hero-anim-subtitle');
-        document.getElementById('hero-scroll').classList.add('hero-anim-scroll');
+      function advance() {
+        while (P.ready < LIMIT && done[P.ready]) P.ready++;
       }
-
-      function finish() {
-        preloader.classList.add('fade-out');
-        startHeroAnimations();
-      }
-
-      function tryFinish() {
-        if (animDone && pageDone) finish();
-      }
-
-      function animate(ts) {
-        if (ts - lastTime >= INTERVAL) {
-          lastTime = ts;
-          const img = frames[current];
-          if (img && img.complete && img.naturalWidth > 0) {
-            ctx.clearRect(0, 0, canvas.width, canvas.height);
-            ctx.drawImage(img, 0, 0, canvas.width, canvas.height);
-          }
-          current++;
-          if (current >= TOTAL) {
-            animDone = true;
-            tryFinish();
-            return;
-          }
+      function pump() {
+        while (inflight < CONC && next < Math.min(cap, LIMIT)) {
+          (function (i) {
+            var img = new Image();
+            img.decoding = 'async';
+            inflight++;
+            img.onload = function () { P.frames[i] = img; finishOne(i); };
+            img.onerror = function () { P.frames[i] = P.frames[i - 1] || null; finishOne(i); };
+            img.src = BASE + 'frame_' + String(i + 1).padStart(4, '0') + '.webp';
+          }(next++));
         }
-        requestAnimationFrame(animate);
+      }
+      function finishOne(i) {
+        inflight--;
+        done[i] = true;
+        advance();
+        pump();
+      }
+      pump();
+
+      var pageLoaded = document.readyState === 'complete';
+      function afterLoad() {
+        pageLoaded = true;
+        cap = LIMIT;
+        (window.requestIdleCallback || function (f) { setTimeout(f, 200); })(pump);
+      }
+      if (pageLoaded) afterLoad(); else window.addEventListener('load', afterLoad);
+
+      /* ==================================================
+         PRELOADER — ~1 s de marca; nunca mais que 3 s
+      ================================================== */
+      (function () {
+        var canvas = document.getElementById('preloader-canvas');
+        var ctx    = canvas.getContext('2d');
+        var bar    = document.getElementById('preloader-bar');
+        var MIN = reduceMotion ? 250 : 1100, MAX = 3200, INTERVAL = 1000 / 48;
+        var t0 = performance.now(), last = 0, cur = 0;
+
+        function finish() {
+          document.documentElement.classList.add('hero-ready');
+          setTimeout(function () {
+            var el = document.getElementById('preloader');
+            if (el && el.parentNode) el.parentNode.removeChild(el);
+          }, 800);
+        }
+
+        function loop(ts) {
+          var el = performance.now() - t0;
+          if (ts - last >= INTERVAL && P.ready) {
+            last = ts;
+            var img = P.frames[cur++ % P.ready];
+            if (img) { ctx.clearRect(0, 0, 400, 400); ctx.drawImage(img, 0, 0, 400, 400); }
+          }
+          bar.style.transform = 'scaleX(' + Math.min(1, el / MIN).toFixed(3) + ')';
+          if ((pageLoaded && el >= MIN && P.ready >= 24) || el >= MAX) { finish(); return; }
+          requestAnimationFrame(loop);
+        }
+        requestAnimationFrame(loop);
+      }());
+
+      /* ==================================================
+         MOTOR DE SCROLL — um único listener + rAF para
+         hero (parallax), pirarucu e vitórias-régias.
+         Só transform/opacity (GPU); medidas ficam em cache.
+      ================================================== */
+      var hero    = document.getElementById('hero');
+      var video   = document.getElementById('hero-video');
+      var content = document.getElementById('hero-content');
+      var scrollEl = document.getElementById('hero-scroll');
+      var layer   = document.getElementById('fish-layer');
+      var canvas  = document.getElementById('fish-canvas');
+      var glass   = document.getElementById('liquid-glass');
+      var ctx     = canvas.getContext('2d');
+      var lilies  = Array.prototype.slice.call(document.querySelectorAll('.lily'));
+
+      var CW = 640, CH = 360;       /* resolução interna (16:9, igual aos frames) */
+      var PX_PER_FRAME = 9;         /* px de rolagem por frame */
+      var DIR_THRESHOLD = 3;        /* px mínimos p/ trocar de direção sem tremer */
+
+      var vw, vh, heroH, docH, dim;
+      var lilyBase = [], lilyOff = [];
+      var curOp = '0', glassOp = '0';
+      var lastY = window.scrollY, heading = 'down', curAngle = 90, frameAcc = 0, lastFi = -1;
+
+      var lilyConf = [
+        { speed: 0.18, rot: -8, rotDrift: 0.010, swayAmp: 10, swayLen: 520 },
+        { speed: 0.30, rot:  6, rotDrift: 0.014, swayAmp: 14, swayLen: 380 },
+        { speed: 0.12, rot: -4, rotDrift: 0.008, swayAmp:  8, swayLen: 460 },
+        { speed: 0.22, rot:  4, rotDrift: 0.009, swayAmp: 12, swayLen: 600 }
+      ];
+
+      function measure() {
+        vw = window.innerWidth;
+        vh = window.innerHeight;
+        heroH = hero.offsetHeight;
+        docH = document.documentElement.scrollHeight;
+        var len = Math.max(Math.min(vw * 0.92, vh * 0.82, 680), 300);
+        dim = { w: len, h: len * (CH / CW), len: len };
+        canvas.style.width  = dim.w + 'px';
+        canvas.style.height = dim.h + 'px';
+        lilyBase = lilies.map(function (el) { return el.offsetTop; });
+        lilyOff  = lilies.map(function (el) { return el.hasAttribute('data-center') ? -el.offsetWidth / 2 : 0; });
       }
 
-      for (let i = 0; i < TOTAL; i++) {
-        const img = new Image();
-        const num = String(i + 1).padStart(4, '0');
-        img.src   = `${BASE}frame_${num}.webp`;
-        img.onload = img.onerror = function () {
-          loaded++;
-          progressBar.style.width = `${(loaded / TOTAL) * 100}%`;
-          if (loaded === 30) requestAnimationFrame(animate);
-        };
-        frames[i] = img;
+      function tickHero(y) {
+        if (y >= heroH) return;
+        var p = y / heroH;
+        video.style.transform   = 'translate3d(0,' + (y * 0.4).toFixed(1) + 'px,0)';
+        content.style.transform = 'translate3d(0,' + (y * 0.12).toFixed(1) + 'px,0)';
+        content.style.opacity   = Math.max(0, 1 - p * 1.8).toFixed(3);
+        if (scrollEl) scrollEl.style.opacity = Math.max(0, 1 - p * 4).toFixed(3);
       }
 
-      if (document.readyState === 'complete') {
-        pageDone = true;
-      } else {
-        window.addEventListener('load', function () {
-          pageDone = true;
-          tryFinish();
-        });
+      /* Pirarucu: entra pelo topo, vai ao centro e fica; vira de cabeça conforme a direção */
+      function tickFish(y) {
+        var delta = y - lastY;
+        if (delta >  DIR_THRESHOLD) heading = 'down';
+        else if (delta < -DIR_THRESHOLD) heading = 'up';
+        lastY = y;
+        frameAcc += Math.abs(delta);
+
+        var fadeStart = heroH * 0.55, fadeEnd = heroH * 0.90;
+        if (y < fadeStart) {
+          if (curOp   !== '0') { layer.style.opacity = '0'; curOp = '0'; }
+          if (glassOp !== '0') { glass.style.opacity = '0'; glassOp = '0'; }
+          return;
+        }
+
+        /* some suavemente nos últimos 60% de uma tela, para não cobrir o rodapé */
+        var endFade = Math.max(0, Math.min(1, (docH - vh - y) / (vh * 0.6)));
+        var op = Math.min(1, (y - fadeStart) / (fadeEnd - fadeStart), endFade).toFixed(3);
+        if (op !== curOp)   { layer.style.opacity = op; curOp = op; }
+        if (op !== glassOp) { glass.style.opacity = op; glassOp = op; }
+
+        if (!P.ready) return;
+        var fi = Math.floor(frameAcc / PX_PER_FRAME) % P.ready;
+        var fr = P.frames[fi];
+
+        var ep    = Math.min(1, (y - fadeStart) / (vh * 0.9));
+        var eased = ep * ep * (3 - 2 * ep);               /* smoothstep */
+        var cy    = -dim.len * 0.5 + (vh * 0.5 + dim.len * 0.5) * eased;
+        var cx    = vw * 0.5 + Math.sin((y / vh) * Math.PI * 1.4) * (vw * 0.03);
+
+        layer.style.transform = 'translate3d(' + (cx - dim.w / 2).toFixed(1) + 'px,' + (cy - dim.h / 2).toFixed(1) + 'px,0)';
+
+        var angle = heading === 'down' ? 90 : -90;
+        if (angle !== curAngle) { canvas.style.transform = 'rotate(' + angle + 'deg)'; curAngle = angle; }
+
+        if (fi !== lastFi && fr) {                         /* só redesenha se o frame mudou */
+          ctx.clearRect(0, 0, CW, CH);
+          ctx.drawImage(fr, 0, 0, CW, CH);
+          lastFi = fi;
+        }
       }
 
-      setTimeout(function () { animDone = true; pageDone = true; tryFinish(); }, 12000);
-    }());
+      function tickLilies(y) {
+        for (var i = 0; i < lilies.length; i++) {
+          var c  = lilyConf[i] || lilyConf[0];
+          var dy = y - lilyBase[i];
+          var sx = Math.sin(y / c.swayLen) * c.swayAmp + lilyOff[i];
+          lilies[i].style.transform =
+            'translate3d(' + sx.toFixed(1) + 'px,' + (-dy * c.speed).toFixed(1) + 'px,0) rotate(' + (c.rot + dy * c.rotDrift).toFixed(2) + 'deg)';
+        }
+      }
 
-    /* --------------------------------------------------
-       NAV — efeito ao rolar
-    -------------------------------------------------- */
-    (function () {
-      const nav = document.getElementById('nav');
+      var ticking = false;
+      function update() {
+        var y = window.scrollY;
+        if (!reduceMotion) { tickHero(y); tickFish(y); tickLilies(y); }
+        ticking = false;
+      }
+      function onScroll() {
+        if (!ticking) { ticking = true; requestAnimationFrame(update); }
+      }
+
+      canvas.style.transform = 'rotate(90deg)';
+      measure();
+      update();
+      window.addEventListener('scroll', onScroll, { passive: true });
+      window.addEventListener('resize', function () { measure(); lastFi = -1; onScroll(); }, { passive: true });
+      window.addEventListener('load', function () { measure(); update(); });
+      if ('ResizeObserver' in window) new ResizeObserver(function () { docH = document.documentElement.scrollHeight; }).observe(document.body);
+
+      /* ==================================================
+         NAV — estado ao rolar + menu mobile
+      ================================================== */
+      var nav = document.getElementById('nav');
+      var toggle = nav.querySelector('.nav__toggle');
+      var links  = nav.querySelector('.nav__links');
+      links.id = 'nav-links';
+
       window.addEventListener('scroll', function () {
         nav.classList.toggle('scrolled', window.scrollY > 20);
       }, { passive: true });
-    }());
-
-    /* --------------------------------------------------
-       NAV — menu mobile (hamburger)
-    -------------------------------------------------- */
-    (function () {
-      const nav    = document.getElementById('nav');
-      const toggle = nav.querySelector('.nav__toggle');
-      const links  = nav.querySelector('.nav__links');
-      if (!toggle || !links) return;
 
       function setOffset() {
         document.documentElement.style.setProperty('--nav-mobile-offset', nav.offsetHeight + 'px');
@@ -1063,292 +1137,120 @@
         links.classList.remove('is-open');
         toggle.setAttribute('aria-expanded', 'false');
       }
-
-      function openMenu() {
-        toggle.classList.add('is-open');
-        links.classList.add('is-open');
-        toggle.setAttribute('aria-expanded', 'true');
-      }
-
       toggle.addEventListener('click', function () {
-        (toggle.classList.contains('is-open') ? closeMenu : openMenu)();
+        var open = !toggle.classList.contains('is-open');
+        toggle.classList.toggle('is-open', open);
+        links.classList.toggle('is-open', open);
+        toggle.setAttribute('aria-expanded', String(open));
       });
+      links.querySelectorAll('a').forEach(function (a) { a.addEventListener('click', closeMenu); });
+      document.addEventListener('keydown', function (e) { if (e.key === 'Escape') closeMenu(); });
+      document.addEventListener('click', function (e) { if (!nav.contains(e.target)) closeMenu(); });
+      window.addEventListener('resize', function () { if (window.innerWidth >= 768) closeMenu(); }, { passive: true });
 
-      // Fecha ao navegar para uma seção/link
-      links.querySelectorAll('a').forEach(function (a) {
-        a.addEventListener('click', closeMenu);
-      });
-
-      // Fecha com Esc
-      document.addEventListener('keydown', function (e) {
-        if (e.key === 'Escape') closeMenu();
-      });
-
-      // Fecha ao clicar fora do menu
-      document.addEventListener('click', function (e) {
-        if (!nav.contains(e.target)) closeMenu();
-      });
-
-      // Volta ao layout desktop automaticamente ao redimensionar
-      window.addEventListener('resize', function () {
-        if (window.innerWidth >= 768) closeMenu();
-      }, { passive: true });
-    }());
-
-    /* --------------------------------------------------
-       LANGUAGE SWITCHER — abre/fecha por clique (funciona em
-       touch, onde não existe :hover) e por teclado.
-    -------------------------------------------------- */
-    (function () {
+      /* ==================================================
+         SELETOR DE IDIOMA — clique (touch) e teclado
+      ================================================== */
       document.querySelectorAll('.lang-switch').forEach(function (widget) {
-        const btn = widget.querySelector('.lang-switch__btn');
+        var btn = widget.querySelector('.lang-switch__btn');
         if (!btn) return;
-
-        function close() {
-          widget.classList.remove('is-open');
-          btn.setAttribute('aria-expanded', 'false');
+        function set(open) {
+          widget.classList.toggle('is-open', open);
+          btn.setAttribute('aria-expanded', String(open));
         }
-        function open() {
-          document.querySelectorAll('.lang-switch.is-open').forEach(function (w) {
-            if (w !== widget) w.classList.remove('is-open');
-          });
-          widget.classList.add('is-open');
-          btn.setAttribute('aria-expanded', 'true');
-        }
-
         btn.addEventListener('click', function (e) {
           e.stopPropagation();
-          (widget.classList.contains('is-open') ? close : open)();
+          set(!widget.classList.contains('is-open'));
         });
+        document.addEventListener('click', function (e) { if (!widget.contains(e.target)) set(false); });
+        document.addEventListener('keydown', function (e) { if (e.key === 'Escape') set(false); });
+      });
 
-        document.addEventListener('click', function (e) {
-          if (!widget.contains(e.target)) close();
-        });
-
-        document.addEventListener('keydown', function (e) {
-          if (e.key === 'Escape') close();
+      /* ==================================================
+         REVEAL — IntersectionObserver, com cascata por grupo
+      ================================================== */
+      document.querySelectorAll('[data-stagger]').forEach(function (group) {
+        Array.prototype.forEach.call(group.children, function (child, i) {
+          child.style.transitionDelay = (Math.min(i, 5) * 90) + 'ms';
         });
       });
-    }());
 
-    /* --------------------------------------------------
-       SCROLL-REVEAL — IntersectionObserver global
-       Para seções futuras: adicione classe .scroll-reveal
-    -------------------------------------------------- */
-    (function () {
-      const observer = new IntersectionObserver(function (entries) {
-        entries.forEach(function (entry) {
-          if (entry.isIntersecting) {
-            entry.target.classList.add('visible');
-            observer.unobserve(entry.target);
-          }
+      var revealEls = document.querySelectorAll('.scroll-reveal');
+      if ('IntersectionObserver' in window) {
+        var io = new IntersectionObserver(function (entries) {
+          entries.forEach(function (entry) {
+            if (!entry.isIntersecting) return;
+            var el = entry.target;
+            el.classList.add('visible');
+            io.unobserve(el);
+            setTimeout(function () { el.style.transitionDelay = ''; }, 1200);
+          });
+        }, { threshold: 0.12, rootMargin: '0px 0px -6% 0px' });
+        revealEls.forEach(function (el) { io.observe(el); });
+      } else {
+        revealEls.forEach(function (el) { el.classList.add('visible'); });
+      }
+
+      /* ==================================================
+         ABAS "COMO FUNCIONA" — acessíveis (setas, Home/End)
+      ================================================== */
+      document.querySelectorAll('[data-tabs]').forEach(function (root) {
+        var tabs   = Array.prototype.slice.call(root.querySelectorAll('[role="tab"]'));
+        var panels = Array.prototype.slice.call(root.querySelectorAll('[role="tabpanel"]'));
+        var cta    = document.getElementById('como-cta');
+
+        function select(tab, focus) {
+          tabs.forEach(function (t, i) {
+            var on = t === tab;
+            t.classList.toggle('is-active', on);
+            t.setAttribute('aria-selected', String(on));
+            t.tabIndex = on ? 0 : -1;
+            panels[i].hidden = !on;
+          });
+          if (cta && tab.dataset.href) cta.href = tab.dataset.href;
+          if (focus) tab.focus();
+        }
+
+        tabs.forEach(function (tab, i) {
+          tab.addEventListener('click', function () { select(tab); });
+          tab.addEventListener('keydown', function (e) {
+            var j = null;
+            if (e.key === 'ArrowRight') j = (i + 1) % tabs.length;
+            else if (e.key === 'ArrowLeft') j = (i - 1 + tabs.length) % tabs.length;
+            else if (e.key === 'Home') j = 0;
+            else if (e.key === 'End') j = tabs.length - 1;
+            if (j !== null) { e.preventDefault(); select(tabs[j], true); }
+          });
         });
-      }, { threshold: 0.15 });
-
-      document.querySelectorAll('.scroll-reveal').forEach(function (el) {
-        observer.observe(el);
+        select(tabs[0]);
       });
-    }());
-  </script>
 
-  <script>
-    /* --------------------------------------------------
-       HERO PARALLAX
-       Vídeo se move 40 % mais lento que o scroll;
-       conteúdo sobe suavemente e vai desvanecendo.
-    -------------------------------------------------- */
-    (function () {
-      var hero    = document.getElementById('hero');
-      var video   = document.getElementById('hero-video');
-      var content = document.getElementById('hero-content');
-      var scrollEl = document.getElementById('hero-scroll');
-      var ticking = false;
+      /* ==================================================
+         HOVER RICO — holofote que segue o cursor nos cards
+      ================================================== */
+      if (window.matchMedia('(hover: hover)').matches) {
+        document.querySelectorAll('.bento__item').forEach(function (el) {
+          el.addEventListener('pointermove', function (e) {
+            var r = el.getBoundingClientRect();
+            el.style.setProperty('--mx', (e.clientX - r.left) + 'px');
+            el.style.setProperty('--my', (e.clientY - r.top) + 'px');
+          });
+        });
+      }
 
-      function tick() {
-        var y = window.scrollY;
-        var h = hero.offsetHeight;
-        if (y < h) {
-          var p = y / h;
-          video.style.transform   = 'translateY(' + (y * 0.4).toFixed(1) + 'px)';
-          content.style.transform = 'translateY(' + (y * 0.12).toFixed(1) + 'px)';
-          content.style.opacity   = Math.max(0, 1 - p * 1.8).toFixed(3);
-          if (scrollEl) {
-            scrollEl.style.transform = 'translateX(-50%) translateY(' + (y * 0.5).toFixed(1) + 'px)';
-            scrollEl.style.opacity   = Math.max(0, 1 - p * 4).toFixed(3);
-          }
+      /* ==================================================
+         ANALYTICS — clique em CTAs (GA4)
+      ================================================== */
+      document.addEventListener('click', function (e) {
+        var a = e.target.closest('[data-cta]');
+        if (a && typeof gtag === 'function') {
+          gtag('event', 'cta_click', {
+            cta_location: a.getAttribute('data-cta'),
+            link_url: a.href,
+            language: document.documentElement.lang
+          });
         }
-        ticking = false;
-      }
-
-      window.addEventListener('scroll', function () {
-        if (!ticking) { ticking = true; requestAnimationFrame(tick); }
-      }, { passive: true });
-    }());
-
-    /* --------------------------------------------------
-       SCROLL-DRIVEN IMAGE SEQUENCE (pirarucu nadando)
-       - Entra pelo topo, vai até o CENTRO e fica lá: o
-         site passa enquanto ele nada no lugar.
-       - Scroll para baixo → cabeça para baixo (desce).
-       - Scroll para cima  → vira e sobe (cabeça p/ cima).
-       - Nadadeira ondula em loop contínuo, mais lenta.
-    -------------------------------------------------- */
-    (function () {
-      var layer  = document.getElementById('fish-layer');
-      var canvas = document.getElementById('fish-canvas');
-      var glass  = document.getElementById('liquid-glass');
-      if (!layer || !canvas) return;
-
-      var ctx     = canvas.getContext('2d');
-      var heroEl  = document.getElementById('hero');
-      var ticking = false;
-
-      var CW = 640, CH = 360;        /* resolução interna (16:9, igual aos frames) */
-      var PX_PER_FRAME = 9;          /* mais lento: px de rolagem por frame */
-      var DIR_THRESHOLD = 3;         /* px mínimos p/ trocar de direção sem tremer */
-
-      var curOp    = '0';
-      var glassOp  = '0';
-      var lastY    = window.scrollY;
-      var heading  = 'down';         /* 'down' = cabeça p/ baixo | 'up' = p/ cima */
-      var curAngle = 90;
-      var frameAcc = 0;              /* distância de rolagem acumulada (sempre p/ frente) */
-
-      /* Tamanho do peixe (comprimento do corpo, antes de rotacionar) */
-      function dims() {
-        var len = Math.min(window.innerWidth * 0.92, window.innerHeight * 0.82, 680);
-        len = Math.max(len, 300);
-        return { w: len, h: len * (CH / CW), len: len };
-      }
-
-      function update() {
-        var frames = window._piraFrames;
-        if (!frames) return;
-
-        var y     = window.scrollY;
-        var vh    = window.innerHeight;
-        var vw    = window.innerWidth;
-        var heroH = heroEl ? heroEl.offsetHeight : vh;
-
-        var fadeStart = heroH * 0.55;
-        var fadeEnd   = heroH * 0.90;
-
-        /* direção do scroll → orientação do peixe; acumula distância p/ os frames */
-        var delta = y - lastY;
-        if (delta >  DIR_THRESHOLD) heading = 'down';
-        else if (delta < -DIR_THRESHOLD) heading = 'up';
-        lastY = y;
-        frameAcc += Math.abs(delta);
-
-        if (y < fadeStart) {
-          if (curOp   !== '0') { layer.style.opacity = '0'; curOp = '0'; }
-          if (glassOp !== '0') { glass.style.opacity = '0'; glassOp = '0'; }
-          return;
-        }
-
-        /* opacidades — peixe 100% opaco; vidro acompanha o fade */
-        var ratio = Math.min(1, (y - fadeStart) / (fadeEnd - fadeStart));
-        var op = ratio.toFixed(3);
-        if (op !== curOp) { layer.style.opacity = op; curOp = op; }
-        var gop = ratio.toFixed(3);
-        if (gop !== glassOp) { glass.style.opacity = gop; glassOp = gop; }
-
-        var d = dims();
-        canvas.style.width  = d.w + 'px';
-        canvas.style.height = d.h + 'px';
-
-        /* frame — sempre avança no sentido da natação (a orientação cuida da direção),
-           então o corpo não parece nadar de ré ao subir */
-        var fi = Math.floor(frameAcc / PX_PER_FRAME) % 240;
-        var fr = frames[fi] || frames[0];
-        if (!(fr && fr.complete && fr.naturalWidth)) return;
-
-        /* posição vertical: entra do topo → centro, e FICA no centro */
-        var entranceDist = vh * 0.9;
-        var ep    = Math.min(1, (y - fadeStart) / entranceDist);
-        var eased = ep * ep * (3 - 2 * ep);          /* smoothstep */
-        var startY  = -d.len * 0.5;                    /* acima do viewport */
-        var centerY = vh * 0.5;
-        var cy = startY + (centerY - startY) * eased;
-
-        /* balanço horizontal sutil em torno do centro (pouco deslocamento lateral) */
-        var sway = Math.sin((y / vh) * Math.PI * 1.4) * (vw * 0.03);
-        var cx   = vw * 0.5 + sway;
-
-        /* POSIÇÃO na camada — sem transição (segue o scroll na hora) */
-        layer.style.transform = 'translate(' + (cx - d.w / 2).toFixed(1) + 'px,'
-                                              + (cy - d.h / 2).toFixed(1) + 'px)';
-
-        /* ROTAÇÃO no canvas — com transição (vira de direção suavemente) */
-        var angle = heading === 'down' ? 90 : -90;
-        if (angle !== curAngle) {
-          canvas.style.transform = 'rotate(' + angle + 'deg)';
-          curAngle = angle;
-        }
-
-        /* desenha o frame preservando a proporção 16:9 */
-        ctx.clearRect(0, 0, CW, CH);
-        ctx.drawImage(fr, 0, 0, CW, CH);
-      }
-
-      function onScroll() {
-        if (!ticking) {
-          ticking = true;
-          requestAnimationFrame(function () { update(); ticking = false; });
-        }
-      }
-
-      canvas.style.transform = 'rotate(90deg)';   /* orientação inicial */
-      window.addEventListener('scroll', onScroll, { passive: true });
-      window.addEventListener('resize', onScroll, { passive: true });
-    }());
-
-    /* --------------------------------------------------
-       VITÓRIA-RÉGIA — parallax "boiando" de baixo p/ cima
-       Cada folha sobe mais que a rolagem (correnteza), com
-       leve balanço lateral e giro suave. 3 folhas, tamanhos
-       e posições diferentes.
-    -------------------------------------------------- */
-    (function () {
-      var lilies = Array.prototype.slice.call(document.querySelectorAll('.lily'));
-      if (!lilies.length) return;
-      if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
-
-      var conf = [
-        { speed: 0.18, rot: -8, rotDrift: 0.010, swayAmp: 10, swayLen: 520 },
-        { speed: 0.30, rot:  6, rotDrift: 0.014, swayAmp: 14, swayLen: 380 },
-        { speed: 0.12, rot: -4, rotDrift: 0.008, swayAmp:  8, swayLen: 460 },
-        { speed: 0.22, rot:  4, rotDrift: 0.009, swayAmp: 12, swayLen: 600 }
-      ];
-      var bases = [], centers = [];
-      function measure() {
-        bases   = lilies.map(function (el) { return el.offsetTop; });
-        centers = lilies.map(function (el) { return el.hasAttribute('data-center') ? -el.offsetWidth / 2 : 0; });
-      }
-
-      var ticking = false;
-      function update() {
-        var y = window.scrollY;
-        for (var i = 0; i < lilies.length; i++) {
-          var c  = conf[i] || conf[0];
-          var dy = y - bases[i];
-          var ty = -dy * c.speed;                              /* boia de baixo p/ cima */
-          var sx = Math.sin(y / c.swayLen) * c.swayAmp + centers[i]; /* balanço + centralização */
-          var rot = c.rot + dy * c.rotDrift;                    /* giro lento da folha */
-          lilies[i].style.transform =
-            'translate(' + sx.toFixed(1) + 'px,' + ty.toFixed(1) + 'px) rotate(' + rot.toFixed(2) + 'deg)';
-        }
-        ticking = false;
-      }
-      function onScroll() {
-        if (!ticking) { ticking = true; requestAnimationFrame(update); }
-      }
-
-      measure();
-      window.addEventListener('scroll', onScroll, { passive: true });
-      window.addEventListener('resize', function () { measure(); onScroll(); }, { passive: true });
-      window.addEventListener('load', function () { measure(); update(); });
-      update();
+      });
     }());
   </script>
 

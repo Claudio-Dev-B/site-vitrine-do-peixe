@@ -50,6 +50,59 @@ function buildSeoLinks(current) {
   return lines.join("\n  ");
 }
 
+// Dados estruturados (JSON-LD): Organization + WebSite + FAQPage, tudo derivado do {locale}.json
+function buildJsonLd(current, data) {
+  const url = localeUrl(current);
+  const faq = Object.keys(data.faq)
+    .filter((k) => /^q\d+$/.test(k))
+    .map((k) => ({
+      "@type": "Question",
+      name: data.faq[k].q,
+      acceptedAnswer: { "@type": "Answer", text: data.faq[k].a },
+    }));
+
+  const graph = {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Organization",
+        "@id": `${SITE_BASE_URL}#organization`,
+        name: "Vitrine do Peixe",
+        url: SITE_BASE_URL,
+        logo: `${SITE_BASE_URL}assets/logo.png`,
+        description: data.meta.description,
+        parentOrganization: { "@type": "Organization", name: "Bússola do Peixe Amazônico" },
+        areaServed: "BR",
+      },
+      {
+        "@type": "WebSite",
+        "@id": `${SITE_BASE_URL}#website`,
+        url: SITE_BASE_URL,
+        name: "Vitrine do Peixe",
+        inLanguage: current.hreflang,
+        publisher: { "@id": `${SITE_BASE_URL}#organization` },
+      },
+      {
+        "@type": "WebPage",
+        "@id": `${url}#webpage`,
+        url,
+        name: data.meta.title,
+        description: data.meta.description,
+        inLanguage: current.hreflang,
+        isPartOf: { "@id": `${SITE_BASE_URL}#website` },
+        about: { "@id": `${SITE_BASE_URL}#organization` },
+      },
+      { "@type": "FAQPage", "@id": `${url}#faq`, inLanguage: current.hreflang, mainEntity: faq },
+    ],
+  };
+
+  // "<" escapado para o JSON nunca fechar a tag <script> por engano
+  const json = JSON.stringify(graph, null, 2).replace(/</g, "\\u003c");
+  return `<script type="application/ld+json">
+${json}
+  </script>`;
+}
+
 function buildLangSwitcher(current, dict) {
   const items = LOCALES.map((loc) => {
     const isCurrent = loc.code === current.code;
@@ -91,6 +144,10 @@ function render(locale) {
   dict["assetPath"] = assetPath;
   dict["seoLinks"] = buildSeoLinks(locale);
   dict["langSwitcher"] = buildLangSwitcher(locale, dict);
+  dict["jsonLd"] = buildJsonLd(locale, data);
+  dict["ogUrl"] = localeUrl(locale);
+  dict["ogImage"] = `${SITE_BASE_URL}assets/logo.png`;
+  dict["year"] = String(new Date().getFullYear());
 
   let html = template.replace(/\{\{([\w.]+)\}\}/g, (match, key) => {
     if (!(key in dict)) {

@@ -3,6 +3,16 @@
    Identidade Visual Oficial | Proposta 02 · Peixe Azul
    ================================================================ */
 
+/* Fallback com métricas ajustadas ao DM Sans: o swap da fonte não "pula" o layout */
+@font-face {
+  font-family: 'DM Sans Fallback';
+  src: local('Arial'), local('Helvetica Neue'), local('Roboto');
+  size-adjust: 104%;
+  ascent-override: 92%;
+  descent-override: 29%;
+  line-gap-override: 0%;
+}
+
 /* ----------------------------------------------------------------
    1. DESIGN TOKENS
    ---------------------------------------------------------------- */
@@ -28,7 +38,7 @@
   --c-white-08:    rgba(255,255,255, 0.08);
 
   /* --- Tipografia --- */
-  --font:          'DM Sans', sans-serif;
+  --font:          'DM Sans', 'DM Sans Fallback', system-ui, sans-serif;
 
   /* Escala tipográfica fluida (mobile → desktop) */
   --text-xs:       0.75rem;    /* 12px */
@@ -336,13 +346,13 @@ p {
 }
 
 .nav__logo img {
-  height: 36px;
+  height: 30px;
   width: auto;
   transition: height var(--t-mid);
 }
 
 .nav.scrolled .nav__logo img {
-  height: 32px;
+  height: 28px;
 }
 
 .nav__links {
@@ -387,24 +397,29 @@ p {
 @media (min-width: 768px) {
   .nav { padding: var(--space-5) var(--container-pad); }
   .nav.scrolled { padding-block: var(--space-4); }
-  .nav__logo img { height: 44px; }
+  .nav__logo img { height: 36px; }
   .nav__links { display: flex; }
 }
 
 @media (min-width: 1200px) {
   .nav { padding: var(--space-6) var(--container-pad); }
-  .nav__logo img { height: 48px; }
+  .nav__logo img { height: 40px; }
 }
 
 
 /* ----------------------------------------------------------------
    7. COMPONENTES — BOTÕES
+   Hover: preenchimento que sobe por baixo (::before, só transform)
+   e seta que desliza (.btn--arrow).
    ---------------------------------------------------------------- */
 .btn {
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  gap: var(--space-2);
+  gap: var(--space-3);
   padding: var(--space-3) var(--space-6);
   font-family: var(--font);
   font-size: var(--text-sm);
@@ -412,69 +427,75 @@ p {
   letter-spacing: var(--ls-wide);
   text-transform: uppercase;
   border-radius: var(--radius-sm);
-  transition: background var(--t-fast), color var(--t-fast), transform var(--t-fast), box-shadow var(--t-fast);
+  transition: color 0.35s ease, border-color 0.35s ease, box-shadow 0.35s ease, transform var(--t-fast);
   cursor: pointer;
-  border: 2px solid transparent;
+  border: 1.5px solid transparent;
   white-space: nowrap;
   user-select: none;
+  --btn-fill: transparent;
 }
 
-.btn:active {
-  transform: scale(0.97);
+.btn::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background: var(--btn-fill);
+  transform: translate3d(0, 101%, 0);
+  transition: transform 0.45s cubic-bezier(0.22, 1, 0.36, 1);
 }
+
+.btn:hover::before,
+.btn:focus-visible::before { transform: translate3d(0, 0, 0); }
+
+.btn:active { transform: scale(0.97); }
+
+.btn--arrow::after {
+  content: '→';
+  display: inline-block;
+  transition: transform 0.35s cubic-bezier(0.22, 1, 0.36, 1);
+}
+.btn--arrow:hover::after { transform: translate3d(5px, 0, 0); }
 
 /* Primário — CTA âmbar */
 .btn--primary {
   background: var(--c-cta);
   color: var(--c-primary);
   border-color: var(--c-cta);
+  --btn-fill: #d98c1e;
 }
+.btn--primary:hover { box-shadow: 0 8px 28px rgba(239, 159, 39, 0.38); border-color: #d98c1e; }
 
-.btn--primary:hover {
-  background: #d98c1e;
-  border-color: #d98c1e;
-  box-shadow: 0 4px 16px rgba(239, 159, 39, 0.35);
-}
-
-/* Secundário — outline branco */
+/* Secundário — outline branco (preenche de branco, texto azul noite) */
 .btn--outline {
   background: transparent;
   color: var(--c-white);
   border-color: var(--c-white-55);
+  --btn-fill: var(--c-white);
 }
-
-.btn--outline:hover {
-  border-color: var(--c-white);
-  background: var(--c-white-08);
-}
+.btn--outline:hover { color: var(--c-primary); border-color: var(--c-white); }
 
 /* Secundário azul */
 .btn--blue {
   background: var(--c-secondary);
   color: var(--c-white);
   border-color: var(--c-secondary);
+  --btn-fill: var(--c-primary);
 }
-
-.btn--blue:hover {
-  background: var(--c-support);
-  border-color: var(--c-support);
-}
+.btn--blue:hover { border-color: var(--c-primary); }
 
 /* Ghost */
 .btn--ghost {
   background: transparent;
   color: var(--c-cta);
   border-color: var(--c-cta);
+  --btn-fill: var(--c-cta);
 }
-
-.btn--ghost:hover {
-  background: var(--c-cta);
-  color: var(--c-primary);
-}
+.btn--ghost:hover { color: var(--c-primary); }
 
 /* Tamanhos */
 .btn--sm { padding: var(--space-2) var(--space-4); font-size: var(--text-xs); }
-.btn--lg { padding: var(--space-4) var(--space-10); font-size: var(--text-base); }
+.btn--lg { padding: var(--space-4) var(--space-8); font-size: var(--text-sm); letter-spacing: var(--ls-wider); }
 
 
 /* ----------------------------------------------------------------
@@ -737,15 +758,19 @@ p {
 .anim-delay-8 { animation-delay: 1.15s; }
 
 /* Scroll-reveal via IntersectionObserver */
-.scroll-reveal {
+.js .scroll-reveal {
   opacity: 0;
-  transform: translateY(24px);
-  transition: opacity 0.7s ease, transform 0.7s ease;
+  transform: translate3d(0, 28px, 0);
+  transition: opacity 0.8s ease, transform 0.9s cubic-bezier(0.22, 1, 0.36, 1);
 }
 
-.scroll-reveal.visible {
+.js .scroll-reveal.visible {
   opacity: 1;
-  transform: translateY(0);
+  transform: translate3d(0, 0, 0);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .js .scroll-reveal { opacity: 1; transform: none; }
 }
 
 
@@ -809,3 +834,37 @@ hr.rule {
 hr.rule--light {
   border-color: var(--c-white-20);
 }
+
+
+/* ----------------------------------------------------------------
+   13. ACABAMENTO — grain, seleção, skip-link
+   ---------------------------------------------------------------- */
+
+/* Ruído estático (tile pequeno, sem animação): tira o aspecto de vetor liso */
+body::after {
+  content: '';
+  position: fixed;
+  inset: 0;
+  z-index: 90;
+  pointer-events: none;
+  opacity: 0.07;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='180' height='180'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='2' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 .9 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+  background-size: 180px 180px;
+}
+
+::selection { background: var(--c-cta); color: var(--c-primary); }
+
+.skip-link {
+  position: fixed;
+  top: 8px;
+  left: 8px;
+  z-index: var(--z-top);
+  padding: 10px 16px;
+  background: var(--c-cta);
+  color: var(--c-primary);
+  font-weight: var(--fw-semibold);
+  border-radius: var(--radius-sm);
+  transform: translateY(-200%);
+  transition: transform var(--t-fast);
+}
+.skip-link:focus { transform: translateY(0); }
