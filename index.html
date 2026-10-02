@@ -9,6 +9,15 @@
   <script>
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
+    /* LGPD / Consent Mode v2: coleta negada por padrão; o banner libera após o aceite */
+    gtag('consent', 'default', {
+      ad_storage: 'denied', ad_user_data: 'denied', ad_personalization: 'denied', analytics_storage: 'denied'
+    });
+    try {
+      if (localStorage.getItem('vdp-consent') === 'granted') {
+        gtag('consent', 'update', { analytics_storage: 'granted' });
+      }
+    } catch (e) {}
     gtag('js', new Date());
 
     gtag('config', 'G-D315FG7B39');
@@ -22,30 +31,30 @@
   </script>
 
   <title>Vitrine do Peixe — Peixe amazônico direto do produtor</title>
-  <meta name="description" content="Plataforma B2B gratuita que conecta produtores e compradores de peixe amazônico, como o pirarucu. Perfis verificados, contato direto e zero comissão." />
+  <meta name="description" content="Plataforma B2B gratuita que conecta produtores e compradores de peixe amazônico: pirarucu, tambaqui, tilápia e tucunaré. Contato direto e zero comissão." />
   <meta name="theme-color" content="#042C53" />
 
-  <link rel="canonical" href="https://claudio-dev-b.github.io/site-vitrine-do-peixe/" />
-  <link rel="alternate" hreflang="pt-BR" href="https://claudio-dev-b.github.io/site-vitrine-do-peixe/" />
-  <link rel="alternate" hreflang="en" href="https://claudio-dev-b.github.io/site-vitrine-do-peixe/en/" />
-  <link rel="alternate" hreflang="es" href="https://claudio-dev-b.github.io/site-vitrine-do-peixe/es/" />
-  <link rel="alternate" hreflang="zh-Hans" href="https://claudio-dev-b.github.io/site-vitrine-do-peixe/zh/" />
-  <link rel="alternate" hreflang="x-default" href="https://claudio-dev-b.github.io/site-vitrine-do-peixe/" />
+  <link rel="canonical" href="https://vitrinedopeixe.com.br/" />
+  <link rel="alternate" hreflang="pt-BR" href="https://vitrinedopeixe.com.br/" />
+  <link rel="alternate" hreflang="en" href="https://vitrinedopeixe.com.br/en/" />
+  <link rel="alternate" hreflang="es" href="https://vitrinedopeixe.com.br/es/" />
+  <link rel="alternate" hreflang="zh-Hans" href="https://vitrinedopeixe.com.br/zh/" />
+  <link rel="alternate" hreflang="x-default" href="https://vitrinedopeixe.com.br/" />
 
   <!-- Open Graph / Twitter -->
   <meta property="og:type" content="website" />
   <meta property="og:site_name" content="Vitrine do Peixe" />
   <meta property="og:title" content="Vitrine do Peixe — Peixe amazônico direto do produtor" />
-  <meta property="og:description" content="Plataforma B2B gratuita que conecta produtores e compradores de peixe amazônico, como o pirarucu. Perfis verificados, contato direto e zero comissão." />
-  <meta property="og:url" content="https://claudio-dev-b.github.io/site-vitrine-do-peixe/" />
+  <meta property="og:description" content="Plataforma B2B gratuita que conecta produtores e compradores de peixe amazônico: pirarucu, tambaqui, tilápia e tucunaré. Contato direto e zero comissão." />
+  <meta property="og:url" content="https://vitrinedopeixe.com.br/" />
   <meta property="og:locale" content="pt_BR" />
-  <meta property="og:image" content="https://claudio-dev-b.github.io/site-vitrine-do-peixe/assets/logo.png" />
+  <meta property="og:image" content="https://vitrinedopeixe.com.br/assets/logo.png" />
   <meta property="og:image:width" content="1721" />
   <meta property="og:image:height" content="914" />
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="Vitrine do Peixe — Peixe amazônico direto do produtor" />
-  <meta name="twitter:description" content="Plataforma B2B gratuita que conecta produtores e compradores de peixe amazônico, como o pirarucu. Perfis verificados, contato direto e zero comissão." />
-  <meta name="twitter:image" content="https://claudio-dev-b.github.io/site-vitrine-do-peixe/assets/logo.png" />
+  <meta name="twitter:description" content="Plataforma B2B gratuita que conecta produtores e compradores de peixe amazônico: pirarucu, tambaqui, tilápia e tucunaré. Contato direto e zero comissão." />
+  <meta name="twitter:image" content="https://vitrinedopeixe.com.br/assets/logo.png" />
 
   <link rel="icon" type="image/png" href="assets/favicon-32x32.png" sizes="32x32" />
   <link rel="apple-touch-icon" href="assets/apple-touch-icon.png" />
@@ -56,44 +65,51 @@
   "@graph": [
     {
       "@type": "Organization",
-      "@id": "https://claudio-dev-b.github.io/site-vitrine-do-peixe/#organization",
+      "@id": "https://vitrinedopeixe.com.br/#organization",
       "name": "Vitrine do Peixe",
-      "url": "https://claudio-dev-b.github.io/site-vitrine-do-peixe/",
-      "logo": "https://claudio-dev-b.github.io/site-vitrine-do-peixe/assets/logo.png",
-      "description": "Plataforma B2B gratuita que conecta produtores e compradores de peixe amazônico, como o pirarucu. Perfis verificados, contato direto e zero comissão.",
+      "url": "https://vitrinedopeixe.com.br/",
+      "logo": "https://vitrinedopeixe.com.br/assets/logo.png",
+      "description": "Plataforma B2B gratuita que conecta produtores e compradores de peixe amazônico: pirarucu, tambaqui, tilápia e tucunaré. Contato direto e zero comissão.",
       "parentOrganization": {
         "@type": "Organization",
         "name": "Bússola do Peixe Amazônico"
       },
-      "areaServed": "BR"
+      "areaServed": "BR",
+      "knowsAbout": [
+        "Pirarucu",
+        "Tambaqui",
+        "Tilápia",
+        "Tucunaré",
+        "Pescado amazônico"
+      ]
     },
     {
       "@type": "WebSite",
-      "@id": "https://claudio-dev-b.github.io/site-vitrine-do-peixe/#website",
-      "url": "https://claudio-dev-b.github.io/site-vitrine-do-peixe/",
+      "@id": "https://vitrinedopeixe.com.br/#website",
+      "url": "https://vitrinedopeixe.com.br/",
       "name": "Vitrine do Peixe",
       "inLanguage": "pt-BR",
       "publisher": {
-        "@id": "https://claudio-dev-b.github.io/site-vitrine-do-peixe/#organization"
+        "@id": "https://vitrinedopeixe.com.br/#organization"
       }
     },
     {
       "@type": "WebPage",
-      "@id": "https://claudio-dev-b.github.io/site-vitrine-do-peixe/#webpage",
-      "url": "https://claudio-dev-b.github.io/site-vitrine-do-peixe/",
+      "@id": "https://vitrinedopeixe.com.br/#webpage",
+      "url": "https://vitrinedopeixe.com.br/",
       "name": "Vitrine do Peixe — Peixe amazônico direto do produtor",
-      "description": "Plataforma B2B gratuita que conecta produtores e compradores de peixe amazônico, como o pirarucu. Perfis verificados, contato direto e zero comissão.",
+      "description": "Plataforma B2B gratuita que conecta produtores e compradores de peixe amazônico: pirarucu, tambaqui, tilápia e tucunaré. Contato direto e zero comissão.",
       "inLanguage": "pt-BR",
       "isPartOf": {
-        "@id": "https://claudio-dev-b.github.io/site-vitrine-do-peixe/#website"
+        "@id": "https://vitrinedopeixe.com.br/#website"
       },
       "about": {
-        "@id": "https://claudio-dev-b.github.io/site-vitrine-do-peixe/#organization"
+        "@id": "https://vitrinedopeixe.com.br/#organization"
       }
     },
     {
       "@type": "FAQPage",
-      "@id": "https://claudio-dev-b.github.io/site-vitrine-do-peixe/#faq",
+      "@id": "https://vitrinedopeixe.com.br/#faq",
       "inLanguage": "pt-BR",
       "mainEntity": [
         {
@@ -114,10 +130,10 @@
         },
         {
           "@type": "Question",
-          "name": "Como sei que os produtores são confiáveis?",
+          "name": "A Vitrine verifica os perfis e garante os negócios?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Todo perfil passa por verificação da nossa equipe antes de aparecer na plataforma. Depois do primeiro contato, a conversa e o acordo são entre vocês."
+            "text": "Não. A Vitrine conecta produtor e comprador, mas não verifica perfis nem garante negociações. Combine tudo diretamente e confirme as informações da outra parte antes de fechar negócio."
           }
         },
         {
@@ -133,7 +149,7 @@
           "name": "Quem pode participar?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Produtores e piscicultores, compradores e indústrias que atuam com pescado amazônico."
+            "text": "Produtores e piscicultores, compradores e indústrias que trabalham com peixes como pirarucu, tambaqui, tilápia e tucunaré."
           }
         },
         {
@@ -511,7 +527,7 @@
 
         <ul class="hero-trust hero-in" style="--i:4">
           <li>Gratuito</li>
-          <li>Perfis verificados</li>
+          <li>Contato direto</li>
           <li>Sem comissão</li>
         </ul>
       </div>
@@ -541,8 +557,8 @@
         <ol class="rows" data-stagger>
           <li class="row scroll-reveal">
             <span class="row__num" aria-hidden="true">01</span>
-            <h3 class="row__title">Origem garantida</h3>
-            <p class="row__desc">Rastreabilidade e procedência direto da Amazônia, do rio ao seu negócio.</p>
+            <h3 class="row__title">Origem amazônica</h3>
+            <p class="row__desc">Produtores da própria Amazônia, com nome, produtos e região à vista no perfil.</p>
             <span class="row__arrow" aria-hidden="true">→</span>
           </li>
           <li class="row scroll-reveal">
@@ -582,9 +598,9 @@
             <p class="stat__desc">A Bússola não cobra nada sobre as suas vendas.</p>
           </li>
           <li class="stat scroll-reveal">
-            <strong class="stat__value">100%</strong>
-            <span class="stat__label">dos perfis verificados</span>
-            <p class="stat__desc">Cada perfil passa por verificação antes de aparecer na plataforma.</p>
+            <strong class="stat__value">Direto</strong>
+            <span class="stat__label">entre as duas pontas</span>
+            <p class="stat__desc">Quem produz e quem compra conversam diretamente, sem ninguém no meio.</p>
           </li>
           <li class="stat scroll-reveal">
             <strong class="stat__value">R$ 0</strong>
@@ -641,8 +657,8 @@
             <span class="bento__icon" aria-hidden="true">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M9 12l2 2 4-4"/><path d="M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z"/></svg>
             </span>
-            <h3>Credibilidade</h3>
-            <p>Um perfil verificado passa mais confiança a quem compra pela primeira vez.</p>
+            <h3>Perfil completo</h3>
+            <p>Produtos, região e contatos no mesmo lugar passam mais confiança a quem compra pela primeira vez.</p>
           </article>
         </div>
 
@@ -674,15 +690,15 @@
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
             </span>
             <h3>Busca por espécie e região</h3>
-            <p>Filtre por tipo de peixe, localização e disponibilidade para achar o que você precisa.</p>
+            <p>Filtre por espécie, localização e disponibilidade para achar o que você precisa.</p>
           </article>
 
           <article class="bento__item bento__item--wide scroll-reveal">
             <span class="bento__icon" aria-hidden="true">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M9 12l2 2 4-4"/><path d="M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z"/></svg>
             </span>
-            <h3>Produtores verificados</h3>
-            <p>Todo perfil passa por verificação antes de aparecer na plataforma.</p>
+            <h3>Perfis detalhados</h3>
+            <p>Veja região, espécies e contatos do produtor antes de iniciar a conversa.</p>
           </article>
 
           <article class="bento__item bento__item--wide scroll-reveal">
@@ -697,8 +713,8 @@
             <span class="bento__icon" aria-hidden="true">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
             </span>
-            <h3>Espécies amazônicas</h3>
-            <p>Acesse espécies nativas, como o pirarucu, que raramente chegam pelos canais convencionais.</p>
+            <h3>Variedade de espécies</h3>
+            <p>Pirarucu, tambaqui, tilápia e tucunaré, entre outras, direto de quem produz.</p>
           </article>
         </div>
 
@@ -791,7 +807,7 @@
             <ol class="steps" aria-label="Passos para o Produtor">
               <li class="step"><span class="step__n" aria-hidden="true">01</span><h3 class="step__title">Crie sua conta</h3><p class="step__text">Acesse a plataforma e escolha o perfil de Produtor. O cadastro é gratuito.</p></li>
               <li class="step"><span class="step__n" aria-hidden="true">02</span><h3 class="step__title">Monte seu perfil</h3><p class="step__text">Informe sua localização, as espécies que você produz e os volumes disponíveis.</p></li>
-              <li class="step"><span class="step__n" aria-hidden="true">03</span><h3 class="step__title">Aguarde a verificação</h3><p class="step__text">Nossa equipe valida seu perfil antes de ele aparecer para os compradores.</p></li>
+              <li class="step"><span class="step__n" aria-hidden="true">03</span><h3 class="step__title">Aguarde a liberação</h3><p class="step__text">Nossa equipe aprova o cadastro e libera o seu acesso à plataforma.</p></li>
               <li class="step"><span class="step__n" aria-hidden="true">04</span><h3 class="step__title">Receba contatos</h3><p class="step__text">Compradores interessados falam direto com você para negociar.</p></li>
             </ol>
           </div>
@@ -847,8 +863,8 @@
               <p>Não. A Bússola não entra na negociação nem cobra comissão. Preço, volume e logística são combinados entre você e a outra parte.</p>
             </details>
             <details class="faq__item" name="faq">
-              <summary><span>Como sei que os produtores são confiáveis?</span></summary>
-              <p>Todo perfil passa por verificação da nossa equipe antes de aparecer na plataforma. Depois do primeiro contato, a conversa e o acordo são entre vocês.</p>
+              <summary><span>A Vitrine verifica os perfis e garante os negócios?</span></summary>
+              <p>Não. A Vitrine conecta produtor e comprador, mas não verifica perfis nem garante negociações. Combine tudo diretamente e confirme as informações da outra parte antes de fechar negócio.</p>
             </details>
             <details class="faq__item" name="faq">
               <summary><span>O que acontece depois que eu me cadastro?</span></summary>
@@ -856,7 +872,7 @@
             </details>
             <details class="faq__item" name="faq">
               <summary><span>Quem pode participar?</span></summary>
-              <p>Produtores e piscicultores, compradores e indústrias que atuam com pescado amazônico.</p>
+              <p>Produtores e piscicultores, compradores e indústrias que trabalham com peixes como pirarucu, tambaqui, tilápia e tucunaré.</p>
             </details>
             <details class="faq__item" name="faq">
               <summary><span>Preciso intermediar a negociação pela Vitrine?</span></summary>
@@ -902,9 +918,21 @@
           <a href="#faq">Perguntas frequentes</a>
         </nav>
       </div>
-      <p class="footer__legal">© 2026 Vitrine do Peixe. Todos os direitos reservados.</p>
+      <p class="footer__legal">© 2026 Vitrine do Peixe. Todos os direitos reservados.
+        · <button type="button" class="footer__cookies" id="consent-reopen">Preferências de cookies</button>
+      </p>
     </div>
   </footer>
+
+  <div id="consent" class="consent" role="dialog" aria-live="polite" aria-label="Aviso de cookies" hidden>
+    <p class="consent__text">Usamos cookies de análise (Google Analytics) para entender como o site é usado. Eles só são ativados se você aceitar.
+      <a href="https://vitrine-do-peixe-piloto.web.app/privacidade.html" class="consent__link">Política de Privacidade</a>
+    </p>
+    <div class="consent__actions">
+      <button type="button" class="btn btn--outline btn--sm" data-consent="denied">Recusar</button>
+      <button type="button" class="btn btn--primary btn--sm" data-consent="granted">Aceitar</button>
+    </div>
+  </div>
 
   <script>
     (function () {
@@ -1237,6 +1265,23 @@
           });
         });
       }
+
+      /* ==================================================
+         CONSENTIMENTO (LGPD) — banner + Consent Mode do GA4
+      ================================================== */
+      var banner = document.getElementById('consent');
+      function stored() { try { return localStorage.getItem('vdp-consent'); } catch (e) { return null; } }
+      function choose(value) {
+        try { localStorage.setItem('vdp-consent', value); } catch (e) {}
+        gtag('consent', 'update', { analytics_storage: value });
+        banner.hidden = true;
+      }
+      if (!stored()) banner.hidden = false;
+      banner.addEventListener('click', function (e) {
+        var b = e.target.closest('[data-consent]');
+        if (b) choose(b.getAttribute('data-consent'));
+      });
+      document.getElementById('consent-reopen').addEventListener('click', function () { banner.hidden = false; });
 
       /* ==================================================
          ANALYTICS — clique em CTAs (GA4)

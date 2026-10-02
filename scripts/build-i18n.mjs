@@ -12,7 +12,7 @@ import { dirname, join } from "node:path";
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const SITE_DIR = join(__dirname, "..");
-const SITE_BASE_URL = "https://claudio-dev-b.github.io/site-vitrine-do-peixe/";
+const SITE_BASE_URL = "https://vitrinedopeixe.com.br/";
 
 // pt fica na raiz (depth 0); os demais em subpastas /en/, /es/, /zh/ (depth 1)
 const LOCALES = [
@@ -73,6 +73,7 @@ function buildJsonLd(current, data) {
         description: data.meta.description,
         parentOrganization: { "@type": "Organization", name: "Bússola do Peixe Amazônico" },
         areaServed: "BR",
+        knowsAbout: ["Pirarucu", "Tambaqui", "Tilápia", "Tucunaré", "Pescado amazônico"],
       },
       {
         "@type": "WebSite",

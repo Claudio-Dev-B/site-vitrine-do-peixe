@@ -500,6 +500,35 @@
 }
 
 
+/* ----------------------------------------------------------------
+   BANNER DE CONSENTIMENTO (LGPD)
+   ---------------------------------------------------------------- */
+.consent {
+  position: fixed;
+  z-index: var(--z-top);
+  left: var(--space-4);
+  right: var(--space-4);
+  bottom: var(--space-4);
+  max-width: 720px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: var(--space-4) var(--space-6);
+  padding: var(--space-5) var(--space-6);
+  background: var(--c-primary);
+  color: var(--c-white);
+  border: 1px solid var(--c-white-20);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-lg);
+}
+.consent[hidden] { display: none; }
+.consent__text { flex: 1 1 320px; font-size: var(--text-sm); line-height: 1.5; color: var(--c-white-80); }
+.consent__link { color: var(--c-white); text-decoration: underline; text-underline-offset: 3px; }
+.consent__actions { display: flex; gap: var(--space-2); }
+
+.footer__cookies { font: inherit; color: inherit; text-decoration: underline; text-underline-offset: 3px; cursor: pointer; }
+.footer__cookies:hover { color: var(--c-white); }
+
 /* ================================================================
    NAV — Mobile hamburger
    ================================================================ */

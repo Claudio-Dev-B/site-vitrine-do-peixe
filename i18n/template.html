@@ -9,6 +9,15 @@
   <script>
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
+    /* LGPD / Consent Mode v2: coleta negada por padrão; o banner libera após o aceite */
+    gtag('consent', 'default', {
+      ad_storage: 'denied', ad_user_data: 'denied', ad_personalization: 'denied', analytics_storage: 'denied'
+    });
+    try {
+      if (localStorage.getItem('vdp-consent') === 'granted') {
+        gtag('consent', 'update', { analytics_storage: 'granted' });
+      }
+    } catch (e) {}
     gtag('js', new Date());
 
     gtag('config', 'G-D315FG7B39');
@@ -789,9 +798,21 @@
           <a href="#faq">{{footer.faq}}</a>
         </nav>
       </div>
-      <p class="footer__legal">© {{year}} Vitrine do Peixe. {{footer.rights}}</p>
+      <p class="footer__legal">© {{year}} Vitrine do Peixe. {{footer.rights}}
+        · <button type="button" class="footer__cookies" id="consent-reopen">{{footer.cookies}}</button>
+      </p>
     </div>
   </footer>
+
+  <div id="consent" class="consent" role="dialog" aria-live="polite" aria-label="{{consent.label}}" hidden>
+    <p class="consent__text">{{consent.text}}
+      <a href="https://vitrine-do-peixe-piloto.web.app/privacidade.html" class="consent__link">{{consent.more}}</a>
+    </p>
+    <div class="consent__actions">
+      <button type="button" class="btn btn--outline btn--sm" data-consent="denied">{{consent.reject}}</button>
+      <button type="button" class="btn btn--primary btn--sm" data-consent="granted">{{consent.accept}}</button>
+    </div>
+  </div>
 
   <script>
     (function () {
@@ -1124,6 +1145,23 @@
           });
         });
       }
+
+      /* ==================================================
+         CONSENTIMENTO (LGPD) — banner + Consent Mode do GA4
+      ================================================== */
+      var banner = document.getElementById('consent');
+      function stored() { try { return localStorage.getItem('vdp-consent'); } catch (e) { return null; } }
+      function choose(value) {
+        try { localStorage.setItem('vdp-consent', value); } catch (e) {}
+        gtag('consent', 'update', { analytics_storage: value });
+        banner.hidden = true;
+      }
+      if (!stored()) banner.hidden = false;
+      banner.addEventListener('click', function (e) {
+        var b = e.target.closest('[data-consent]');
+        if (b) choose(b.getAttribute('data-consent'));
+      });
+      document.getElementById('consent-reopen').addEventListener('click', function () { banner.hidden = false; });
 
       /* ==================================================
          ANALYTICS — clique em CTAs (GA4)

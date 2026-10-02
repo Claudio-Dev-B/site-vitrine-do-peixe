@@ -2,7 +2,7 @@
   "htmlLang": "en",
   "meta": {
     "title": "Vitrine do Peixe — Amazonian fish, straight from the producer",
-    "description": "Free B2B platform connecting producers and buyers of Amazonian fish, like pirarucu. Verified profiles, direct contact and zero commission.",
+    "description": "Free B2B platform connecting producers and buyers of Amazonian fish: pirarucu, tambaqui, tilapia and peacock bass. Direct contact and zero commission.",
     "ogLocale": "en_US",
     "logoAlt": "Vitrine do Peixe"
   },
@@ -28,7 +28,7 @@
     "ctaPrimary": "Sign up free",
     "ctaSecondary": "See how it works",
     "trust1": "Free",
-    "trust2": "Verified profiles",
+    "trust2": "Direct contact",
     "trust3": "No commission",
     "scroll": "Explore"
   },
@@ -37,46 +37,103 @@
     "title": "Great producers only sell to people they already know.",
     "p1": "There are Amazonian producers with quality fish and no buyer outside their own region. And there are buyers looking for a reliable supplier with no idea where to start.",
     "p2": "Vitrine was built to close that gap. It is part of the Bússola do Peixe Amazônico project, a startup born in the Amazon: a place where producers get seen and buyers find them.",
-    "pillar1": { "title": "Guaranteed origin", "desc": "Traceability and provenance straight from the Amazon, from the river to your business." },
-    "pillar2": { "title": "Direct connection", "desc": "Producers and buyers talk to each other, with no unnecessary middleman in between." },
-    "pillar3": { "title": "Real impact", "desc": "Stronger local supply chains and a sustainable Amazonian economy." }
+    "pillar1": {
+      "title": "Amazonian origin",
+      "desc": "Producers from the Amazon itself, with name, products and region visible on the profile."
+    },
+    "pillar2": {
+      "title": "Direct connection",
+      "desc": "Producers and buyers talk to each other, with no unnecessary middleman in between."
+    },
+    "pillar3": {
+      "title": "Real impact",
+      "desc": "Stronger local supply chains and a sustainable Amazonian economy."
+    }
   },
   "garantias": {
     "tag": "What to expect",
     "title": "Three rules that never change.",
-    "s1": { "value": "0%", "label": "commission", "desc": "Bússola takes nothing from your sales." },
-    "s2": { "value": "100%", "label": "verified profiles", "desc": "Every profile is verified before it appears on the platform." },
-    "s3": { "value": "Free", "label": "to get started", "desc": "Sign-up and access cost nothing for producers and buyers." }
+    "s1": {
+      "value": "0%",
+      "label": "commission",
+      "desc": "Bússola takes nothing from your sales."
+    },
+    "s2": {
+      "value": "Direct",
+      "label": "between both ends",
+      "desc": "Those who produce and those who buy talk directly, with nobody in between."
+    },
+    "s3": {
+      "value": "Free",
+      "label": "to get started",
+      "desc": "Sign-up and access cost nothing for producers and buyers."
+    }
   },
   "produtor": {
     "badge": "Free sign-up for producers",
     "title": "Your production deserves to be seen.",
     "p1": "Many producers only sell to people they already know. It is not a lack of product, it is a lack of reach. On Vitrine you get a public profile with your products, your region and your contacts, and buyers from all over Brazil talk to you directly.",
     "p2": "Bússola does not step into the negotiation and charges no commission. The deal is between you and the buyer.",
-    "card1": { "title": "Public profile", "desc": "Your name, your products and your region in front of buyers across Brazil." },
-    "card2": { "title": "Direct contact", "desc": "Buyers talk to you. No long forms, no middleman." },
-    "card3": { "title": "No commission", "desc": "Bússola takes nothing from your sales. What you negotiate is yours." },
-    "card4": { "title": "Credibility", "desc": "A verified profile builds trust with first-time buyers." },
+    "card1": {
+      "title": "Public profile",
+      "desc": "Your name, your products and your region in front of buyers across Brazil."
+    },
+    "card2": {
+      "title": "Direct contact",
+      "desc": "Buyers talk to you. No long forms, no middleman."
+    },
+    "card3": {
+      "title": "No commission",
+      "desc": "Bússola takes nothing from your sales. What you negotiate is yours."
+    },
+    "card4": {
+      "title": "Complete profile",
+      "desc": "Products, region and contacts in one place build trust with first-time buyers."
+    },
     "cta": "Sign up as a producer"
   },
   "comprador": {
     "badge": "Free access for buyers",
     "title": "Find the right fish, from the right origin.",
     "p1": "Search producers by species, region or available volume and talk straight to the people who produce. No fees, no intermediaries, no surprises. Bússola connects both ends and the negotiation happens between you.",
-    "card1": { "title": "Search by species and region", "desc": "Filter by fish type, location and availability to find what you need." },
-    "card2": { "title": "Verified producers", "desc": "Every profile is verified before it appears on the platform." },
-    "card3": { "title": "Direct negotiation", "desc": "Talk to the producer and settle the details without third parties." },
-    "card4": { "title": "Amazonian species", "desc": "Access native species, like pirarucu, that rarely reach conventional channels." },
+    "card1": {
+      "title": "Search by species and region",
+      "desc": "Filter by species, location and availability to find what you need."
+    },
+    "card2": {
+      "title": "Detailed profiles",
+      "desc": "See the producer's region, species and contacts before starting the conversation."
+    },
+    "card3": {
+      "title": "Direct negotiation",
+      "desc": "Talk to the producer and settle the details without third parties."
+    },
+    "card4": {
+      "title": "Species variety",
+      "desc": "Pirarucu, tambaqui, tilapia and peacock bass (tucunaré), among others, straight from those who produce."
+    },
     "cta": "Sign up as a buyer"
   },
   "industria": {
     "tag": "For industry",
     "title": "Get straight to Amazonian production.",
     "p1": "Vitrine is also a channel for industries that want to get closer to those who produce in the Amazon. Find producers, negotiate volume and advertise your products and promotions to an audience that already works in the sector.",
-    "card1": { "title": "Contact with producers", "desc": "Negotiate directly with those who produce, with no middlemen." },
-    "card2": { "title": "Ads on the platform", "desc": "Promote your products to a targeted Amazonian fisheries audience." },
-    "card3": { "title": "Promotions and campaigns", "desc": "Launch offers and seasonal campaigns inside Vitrine itself." },
-    "card4": { "title": "Supply overview", "desc": "See what is available in Amazonian production and plan your demand." },
+    "card1": {
+      "title": "Contact with producers",
+      "desc": "Negotiate directly with those who produce, with no middlemen."
+    },
+    "card2": {
+      "title": "Ads on the platform",
+      "desc": "Promote your products to a targeted Amazonian fisheries audience."
+    },
+    "card3": {
+      "title": "Promotions and campaigns",
+      "desc": "Launch offers and seasonal campaigns inside Vitrine itself."
+    },
+    "card4": {
+      "title": "Supply overview",
+      "desc": "See what is available in Amazonian production and plan your demand."
+    },
     "cta": "Start with sign-up"
   },
   "como": {
@@ -87,26 +144,62 @@
     "produtor": {
       "label": "Producer",
       "stepsLabel": "Steps for Producers",
-      "step1": { "title": "Create your account", "text": "Go to the platform and choose the Producer profile. Sign-up is free." },
-      "step2": { "title": "Build your profile", "text": "Add your location, the species you produce and the volumes available." },
-      "step3": { "title": "Wait for verification", "text": "Our team validates your profile before it is shown to buyers." },
-      "step4": { "title": "Get contacted", "text": "Interested buyers talk to you directly to negotiate." }
+      "step1": {
+        "title": "Create your account",
+        "text": "Go to the platform and choose the Producer profile. Sign-up is free."
+      },
+      "step2": {
+        "title": "Build your profile",
+        "text": "Add your location, the species you produce and the volumes available."
+      },
+      "step3": {
+        "title": "Wait for approval",
+        "text": "Our team approves your sign-up and gives you access to the platform."
+      },
+      "step4": {
+        "title": "Get contacted",
+        "text": "Interested buyers talk to you directly to negotiate."
+      }
     },
     "comprador": {
       "label": "Buyer",
       "stepsLabel": "Steps for Buyers",
-      "step1": { "title": "Create your account", "text": "Go to the platform and choose the Buyer profile. Access is free." },
-      "step2": { "title": "Search producers", "text": "Filter by species, region or available volume until you find what you need." },
-      "step3": { "title": "Get in touch", "text": "Open the producer's profile and start the conversation directly." },
-      "step4": { "title": "Negotiate and close", "text": "Price, volume and logistics are agreed between you and the producer." }
+      "step1": {
+        "title": "Create your account",
+        "text": "Go to the platform and choose the Buyer profile. Access is free."
+      },
+      "step2": {
+        "title": "Search producers",
+        "text": "Filter by species, region or available volume until you find what you need."
+      },
+      "step3": {
+        "title": "Get in touch",
+        "text": "Open the producer's profile and start the conversation directly."
+      },
+      "step4": {
+        "title": "Negotiate and close",
+        "text": "Price, volume and logistics are agreed between you and the producer."
+      }
     },
     "industria": {
       "label": "Industry",
       "stepsLabel": "Steps for Industry",
-      "step1": { "title": "Sign up", "text": "Introduce your company and learn about the options available to industry." },
-      "step2": { "title": "Reach producers", "text": "Search suppliers by species, region and volume, just like the buyer profile." },
-      "step3": { "title": "Advertise on the platform", "text": "Set up ads and promotions to show up for Vitrine users." },
-      "step4": { "title": "Negotiate directly", "text": "Contact with producers is direct. Bússola does not intermediate or charge commission." }
+      "step1": {
+        "title": "Sign up",
+        "text": "Introduce your company and learn about the options available to industry."
+      },
+      "step2": {
+        "title": "Reach producers",
+        "text": "Search suppliers by species, region and volume, just like the buyer profile."
+      },
+      "step3": {
+        "title": "Advertise on the platform",
+        "text": "Set up ads and promotions to show up for Vitrine users."
+      },
+      "step4": {
+        "title": "Negotiate directly",
+        "text": "Contact with producers is direct. Bússola does not intermediate or charge commission."
+      }
     },
     "disclaimer": {
       "strong": "Bússola charges no commission and does not intermediate negotiations.",
@@ -117,12 +210,30 @@
   "faq": {
     "tag": "FAQ",
     "title": "What everyone asks before getting started.",
-    "q1": { "q": "How much does Vitrine cost?", "a": "Nothing. Sign-up and access are free for producers and buyers." },
-    "q2": { "q": "Does Vitrine charge commission on sales?", "a": "No. Bússola does not step into the negotiation or charge commission. Price, volume and logistics are agreed between you and the other party." },
-    "q3": { "q": "How do I know the producers are reliable?", "a": "Every profile is verified by our team before it appears on the platform. After the first contact, the conversation and the deal are between you." },
-    "q4": { "q": "What happens after I sign up?", "a": "You create your account and choose your profile. Every sign-up is approved by our team before first access to the platform." },
-    "q5": { "q": "Who can take part?", "a": "Producers and fish farmers, buyers and industries working with Amazonian fish." },
-    "q6": { "q": "Do I have to negotiate through Vitrine?", "a": "No. Vitrine connects both ends and the negotiation happens directly between you, in whatever way works best for both." }
+    "q1": {
+      "q": "How much does Vitrine cost?",
+      "a": "Nothing. Sign-up and access are free for producers and buyers."
+    },
+    "q2": {
+      "q": "Does Vitrine charge commission on sales?",
+      "a": "No. Bússola does not step into the negotiation or charge commission. Price, volume and logistics are agreed between you and the other party."
+    },
+    "q3": {
+      "q": "Does Vitrine verify profiles or guarantee deals?",
+      "a": "No. Vitrine connects producers and buyers, but it does not verify profiles or guarantee negotiations. Agree everything directly and confirm the other party's information before closing a deal."
+    },
+    "q4": {
+      "q": "What happens after I sign up?",
+      "a": "You create your account and choose your profile. Every sign-up is approved by our team before first access to the platform."
+    },
+    "q5": {
+      "q": "Who can take part?",
+      "a": "Producers and fish farmers, buyers and industries working with fish such as pirarucu, tambaqui, tilapia and peacock bass."
+    },
+    "q6": {
+      "q": "Do I have to negotiate through Vitrine?",
+      "a": "No. Vitrine connects both ends and the negotiation happens directly between you, in whatever way works best for both."
+    }
   },
   "final": {
     "title": "Your next deal starts with a profile.",
@@ -133,7 +244,8 @@
   "footer": {
     "about": "Vitrine do Peixe is part of the Bússola do Peixe Amazônico project.",
     "faq": "FAQ",
-    "rights": "All rights reserved."
+    "rights": "All rights reserved.",
+    "cookies": "Cookie preferences"
   },
   "lang": {
     "switcherLabel": "Language",
@@ -141,5 +253,12 @@
     "en": "English",
     "es": "Español",
     "zh": "中文"
+  },
+  "consent": {
+    "label": "Cookie notice",
+    "text": "We use analytics cookies (Google Analytics) to understand how the site is used. They are only enabled if you accept.",
+    "accept": "Accept",
+    "reject": "Decline",
+    "more": "Privacy Policy"
   }
 }

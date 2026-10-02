@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://claudio-dev-b.github.io/site-vitrine-do-peixe/sitemap.xml
+Sitemap: https://vitrinedopeixe.com.br/sitemap.xml
